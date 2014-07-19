@@ -1,0 +1,8 @@
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Entidades\bin\Release\ColasBancarias.Entidades.dll
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Entidades\bin\Release\ColasBancarias.Entidades.pdb
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Entidades\bin\Release\ColasBancarias.Entidades.xml
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Entidades\obj\Release\ColasBancarias.Entidades.Resources.resources
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Entidades\obj\Release\ColasBancarias.Entidades.vbproj.GenerateResource.Cache
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Entidades\obj\Release\ColasBancarias.Entidades.dll
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Entidades\obj\Release\ColasBancarias.Entidades.xml
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Entidades\obj\Release\ColasBancarias.Entidades.pdb
