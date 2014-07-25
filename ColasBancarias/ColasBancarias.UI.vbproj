@@ -66,7 +66,6 @@
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ColasBancarias.BLL\ColasBancarias.BLL.vbproj">
       <Project>{AF4E9BB4-7509-4583-AF09-CF0E62B9E284}</Project>
@@ -117,6 +116,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Frm_NuevoCliente.Designer.vb">
+      <DependentUpon>Frm_NuevoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_NuevoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -137,7 +142,17 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_NuevoCliente.resx">
+      <DependentUpon>Frm_NuevoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -24,8 +24,8 @@ Partial Class Frm_Inicio
     Private Sub InitializeComponent()
         Me.Bt_Clientes = New System.Windows.Forms.Button()
         Me.Bt_Cajero = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Bnt_NuevoCliente = New System.Windows.Forms.Button()
+        Me.Bnt_NuevoCajero = New System.Windows.Forms.Button()
         Me.Bt_FilaCliente = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -47,27 +47,27 @@ Partial Class Frm_Inicio
         Me.Bt_Cajero.Text = "Cajero"
         Me.Bt_Cajero.UseVisualStyleBackColor = True
         '
-        'Button3
+        'Bnt_NuevoCliente
         '
-        Me.Button3.Location = New System.Drawing.Point(52, 142)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Bnt_NuevoCliente.Location = New System.Drawing.Point(52, 142)
+        Me.Bnt_NuevoCliente.Name = "Bnt_NuevoCliente"
+        Me.Bnt_NuevoCliente.Size = New System.Drawing.Size(109, 23)
+        Me.Bnt_NuevoCliente.TabIndex = 2
+        Me.Bnt_NuevoCliente.Text = "Nuevo Cliente"
+        Me.Bnt_NuevoCliente.UseVisualStyleBackColor = True
         '
-        'Button4
+        'Bnt_NuevoCajero
         '
-        Me.Button4.Location = New System.Drawing.Point(326, 142)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Bnt_NuevoCajero.Location = New System.Drawing.Point(273, 142)
+        Me.Bnt_NuevoCajero.Name = "Bnt_NuevoCajero"
+        Me.Bnt_NuevoCajero.Size = New System.Drawing.Size(128, 23)
+        Me.Bnt_NuevoCajero.TabIndex = 3
+        Me.Bnt_NuevoCajero.Text = "Nuevo  Cajero"
+        Me.Bnt_NuevoCajero.UseVisualStyleBackColor = True
         '
         'Bt_FilaCliente
         '
-        Me.Bt_FilaCliente.Location = New System.Drawing.Point(172, 83)
+        Me.Bt_FilaCliente.Location = New System.Drawing.Point(178, 79)
         Me.Bt_FilaCliente.Name = "Bt_FilaCliente"
         Me.Bt_FilaCliente.Size = New System.Drawing.Size(91, 23)
         Me.Bt_FilaCliente.TabIndex = 4
@@ -80,8 +80,8 @@ Partial Class Frm_Inicio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(430, 191)
         Me.Controls.Add(Me.Bt_FilaCliente)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Bnt_NuevoCajero)
+        Me.Controls.Add(Me.Bnt_NuevoCliente)
         Me.Controls.Add(Me.Bt_Cajero)
         Me.Controls.Add(Me.Bt_Clientes)
         Me.Name = "Frm_Inicio"
@@ -91,7 +91,7 @@ Partial Class Frm_Inicio
     End Sub
     Friend WithEvents Bt_Clientes As System.Windows.Forms.Button
     Friend WithEvents Bt_Cajero As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Bnt_NuevoCliente As System.Windows.Forms.Button
+    Friend WithEvents Bnt_NuevoCajero As System.Windows.Forms.Button
     Friend WithEvents Bt_FilaCliente As System.Windows.Forms.Button
 End Class

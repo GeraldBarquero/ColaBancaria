@@ -6,3 +6,11 @@ C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Enti
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Entidades\obj\Debug\ColasBancarias.Entidades.dll
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Entidades\obj\Debug\ColasBancarias.Entidades.xml
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Entidades\obj\Debug\ColasBancarias.Entidades.pdb
+C:\Git\ColaBancaria\ColasBancarias.Entidades\bin\Debug\ColasBancarias.Entidades.dll
+C:\Git\ColaBancaria\ColasBancarias.Entidades\bin\Debug\ColasBancarias.Entidades.pdb
+C:\Git\ColaBancaria\ColasBancarias.Entidades\bin\Debug\ColasBancarias.Entidades.xml
+C:\Git\ColaBancaria\ColasBancarias.Entidades\obj\Debug\ColasBancarias.Entidades.Resources.resources
+C:\Git\ColaBancaria\ColasBancarias.Entidades\obj\Debug\ColasBancarias.Entidades.vbproj.GenerateResource.Cache
+C:\Git\ColaBancaria\ColasBancarias.Entidades\obj\Debug\ColasBancarias.Entidades.dll
+C:\Git\ColaBancaria\ColasBancarias.Entidades\obj\Debug\ColasBancarias.Entidades.xml
+C:\Git\ColaBancaria\ColasBancarias.Entidades\obj\Debug\ColasBancarias.Entidades.pdb
