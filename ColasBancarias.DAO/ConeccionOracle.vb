@@ -1,4 +1,5 @@
 ﻿Imports Oracle.DataAccess.Client
+Imports System.Data
 
 Namespace ConeccionOracle
     Public Class ConeccionOracle

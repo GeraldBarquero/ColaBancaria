@@ -84,6 +84,7 @@
     <Compile Include="OBJETOS\ObjCliente.vb" />
     <Compile Include="OBJETOS\ObjFilaCliente.vb" />
     <Compile Include="OBJETOS\ObjTipoCliente.vb" />
+    <Compile Include="OBJETOS\ObjTipoTransaccion.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

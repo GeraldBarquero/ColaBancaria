@@ -6,3 +6,11 @@ C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Util
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Utilitarios\obj\Release\ColasBancarias.Utilitarios.dll
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Utilitarios\obj\Release\ColasBancarias.Utilitarios.xml
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias.Utilitarios\obj\Release\ColasBancarias.Utilitarios.pdb
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias.Utilitarios\bin\Release\ColasBancarias.Utilitarios.dll
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias.Utilitarios\bin\Release\ColasBancarias.Utilitarios.pdb
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias.Utilitarios\bin\Release\ColasBancarias.Utilitarios.xml
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias.Utilitarios\obj\Release\ColasBancarias.Utilitarios.Resources.resources
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias.Utilitarios\obj\Release\ColasBancarias.Utilitarios.vbproj.GenerateResource.Cache
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias.Utilitarios\obj\Release\ColasBancarias.Utilitarios.dll
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias.Utilitarios\obj\Release\ColasBancarias.Utilitarios.xml
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias.Utilitarios\obj\Release\ColasBancarias.Utilitarios.pdb
