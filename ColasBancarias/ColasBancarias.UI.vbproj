@@ -60,7 +60,7 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ColasBancarias.UI.Frm_Inicio</StartupObject>
+    <StartupObject>ColasBancarias.UI.Frm_FilaClientes</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -111,6 +111,12 @@
     <Compile Include="Frm_ListaClientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Frm_RegistroCajero.Designer.vb">
+      <DependentUpon>Frm_RegistroCajero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_RegistroCajero.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -144,6 +150,9 @@
     <EmbeddedResource Include="Frm_ListaClientes.resx">
       <DependentUpon>Frm_ListaClientes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_RegistroCajero.resx">
+      <DependentUpon>Frm_RegistroCajero.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -159,6 +168,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banco2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cajera.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cajero.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

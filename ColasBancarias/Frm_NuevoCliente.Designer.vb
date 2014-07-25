@@ -28,7 +28,7 @@ Partial Class Frm_NuevoCliente
         Me.Txt_CedulaCliente = New System.Windows.Forms.TextBox()
         Me.Txt_NombreCliente = New System.Windows.Forms.TextBox()
         Me.Txt_EdadCliente = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Btn_CancelarRegistroCliente = New System.Windows.Forms.Button()
         Me.Btn_CrearCliente = New System.Windows.Forms.Button()
         Me.Lb_TipoCliente = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -82,14 +82,14 @@ Partial Class Frm_NuevoCliente
         Me.Txt_EdadCliente.Size = New System.Drawing.Size(100, 20)
         Me.Txt_EdadCliente.TabIndex = 5
         '
-        'Button2
+        'Btn_CancelarRegistroCliente
         '
-        Me.Button2.Image = Global.ColasBancarias.UI.My.Resources.Resources.Cancel
-        Me.Button2.Location = New System.Drawing.Point(176, 186)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 50)
-        Me.Button2.TabIndex = 7
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Btn_CancelarRegistroCliente.Image = Global.ColasBancarias.UI.My.Resources.Resources.Cancel
+        Me.Btn_CancelarRegistroCliente.Location = New System.Drawing.Point(176, 186)
+        Me.Btn_CancelarRegistroCliente.Name = "Btn_CancelarRegistroCliente"
+        Me.Btn_CancelarRegistroCliente.Size = New System.Drawing.Size(75, 50)
+        Me.Btn_CancelarRegistroCliente.TabIndex = 7
+        Me.Btn_CancelarRegistroCliente.UseVisualStyleBackColor = True
         '
         'Btn_CrearCliente
         '
@@ -124,7 +124,7 @@ Partial Class Frm_NuevoCliente
         Me.ClientSize = New System.Drawing.Size(284, 262)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Lb_TipoCliente)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Btn_CancelarRegistroCliente)
         Me.Controls.Add(Me.Btn_CrearCliente)
         Me.Controls.Add(Me.Txt_EdadCliente)
         Me.Controls.Add(Me.Txt_NombreCliente)
@@ -145,7 +145,7 @@ Partial Class Frm_NuevoCliente
     Friend WithEvents Txt_NombreCliente As System.Windows.Forms.TextBox
     Friend WithEvents Txt_EdadCliente As System.Windows.Forms.TextBox
     Friend WithEvents Btn_CrearCliente As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Btn_CancelarRegistroCliente As System.Windows.Forms.Button
     Friend WithEvents Lb_TipoCliente As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class
