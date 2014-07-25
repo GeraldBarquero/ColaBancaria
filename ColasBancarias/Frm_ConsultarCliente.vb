@@ -1,6 +1,6 @@
 ﻿Imports ColasBancarias.BLL
 
-Public Class Form1
+Public Class Frm_ConsultarCliente
     Dim objeto As Integer
     Dim ejecutar As New BllCliente
 
@@ -10,6 +10,6 @@ Public Class Form1
         Else
             objeto = TextBox1.Text
         End If
-        DataGridView1.DataSource = ejecutar.consultar(objeto)
+        DataGridView1.DataSource = ejecutar.consultarCliente(objeto)
     End Sub
 End Class

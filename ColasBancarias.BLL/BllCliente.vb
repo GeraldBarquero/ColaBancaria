@@ -4,7 +4,7 @@ Public Class BllCliente
     Dim objeto As Integer
     Dim ejecutar As New MetodosOracle.MetodosOracle
 
-    Public Function consultar(objeto)
+    Public Function consultarCliente(objeto)
         Dim tablaCliente As New DataTable()
 
         tablaCliente = ejecutar.consultarCliente(objeto)
@@ -12,5 +12,11 @@ Public Class BllCliente
         Return tablaCliente
     End Function
 
+    Public Function listaCliente()
+        Dim tablaListaCliente As New DataTable()
 
+        tablaListaCliente = ejecutar.listaCliente()
+
+        Return tablaListaCliente
+    End Function
 End Class

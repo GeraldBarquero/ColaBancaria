@@ -82,10 +82,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Frm_ConsultarCliente.Designer.vb">
+      <DependentUpon>Frm_ConsultarCliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Frm_ConsultarCliente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_FilaClientes.Designer.vb">
@@ -124,14 +124,20 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Frm_ConsultarCliente.resx">
+      <DependentUpon>Frm_ConsultarCliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_FilaClientes.resx">
       <DependentUpon>Frm_FilaClientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Inicio.resx">
       <DependentUpon>Frm_Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ListaCajerosvb.resx">
+      <DependentUpon>Frm_ListaCajerosvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ListaClientes.resx">
+      <DependentUpon>Frm_ListaClientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>

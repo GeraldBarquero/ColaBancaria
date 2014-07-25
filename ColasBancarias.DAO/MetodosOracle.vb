@@ -32,5 +32,29 @@ Namespace MetodosOracle
                 Return tablaClientes
             End Try
         End Function
+
+        Public Function listaCliente() As DataTable
+            Dim tablaListaClientes As New DataTable()
+            Try
+                Dim conn As New ConeccionOracle.ConeccionOracle()
+                If conn.connection.State = ConnectionState.Closed Then
+                    conn.connection.Open()
+                End If
+                conn.cmd = New OracleCommand("LISTA_CLIENTES", conn.connection)
+                conn.cmd.CommandType = CommandType.StoredProcedure
+
+                conn.cmd.Parameters.Add("P_LISTA", OracleDbType.RefCursor, ParameterDirection.Output)
+
+                Dim dataReader As OracleDataReader = conn.cmd.ExecuteReader()
+
+                tablaListaClientes.Load(dataReader)
+
+                conn.connection.Close()
+                Return tablaListaClientes
+            Catch ex As Exception
+                MessageBox.Show("Error: " + ex.Message, "Error al consultar Clientes", MessageBoxButtons.OK, MessageBoxIcon.[Error])
+                Return tablaListaClientes
+            End Try
+        End Function
     End Class
 End Namespace

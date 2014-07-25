@@ -22,8 +22,41 @@ Partial Class Frm_ListaCajerosvb
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.Dgv_Cajeros = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
+        CType(Me.Dgv_Cajeros, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'Dgv_Cajeros
+        '
+        Me.Dgv_Cajeros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Dgv_Cajeros.Location = New System.Drawing.Point(57, 26)
+        Me.Dgv_Cajeros.Name = "Dgv_Cajeros"
+        Me.Dgv_Cajeros.Size = New System.Drawing.Size(474, 179)
+        Me.Dgv_Cajeros.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(456, 219)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Frm_ListaCajerosvb
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(584, 254)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Dgv_Cajeros)
+        Me.Name = "Frm_ListaCajerosvb"
         Me.Text = "Frm_ListaCajerosvb"
+        CType(Me.Dgv_Cajeros, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
     End Sub
+    Friend WithEvents Dgv_Cajeros As System.Windows.Forms.DataGridView
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
