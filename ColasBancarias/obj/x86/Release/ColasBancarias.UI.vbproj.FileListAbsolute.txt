@@ -22,3 +22,4 @@ C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\ob
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\obj\x86\Release\ColasBancarias.UI.vbproj.GenerateResource.Cache
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\obj\x86\Release\ColasBancarias.UI.exe
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\obj\x86\Release\ColasBancarias.UI.pdb
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\obj\x86\Release\ColasBancarias.UI.Frm_RegistroCliente.resources

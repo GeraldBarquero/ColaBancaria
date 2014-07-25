@@ -23,7 +23,7 @@ Partial Class Frm_ListaClientes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Dgv_ListaClientes = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Bt_RegistrarCliente = New System.Windows.Forms.Button()
         CType(Me.Dgv_ListaClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -37,21 +37,21 @@ Partial Class Frm_ListaClientes
         Me.Dgv_ListaClientes.Size = New System.Drawing.Size(622, 212)
         Me.Dgv_ListaClientes.TabIndex = 0
         '
-        'Button1
+        'Bt_RegistrarCliente
         '
-        Me.Button1.Location = New System.Drawing.Point(605, 251)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Bt_RegistrarCliente.Location = New System.Drawing.Point(531, 251)
+        Me.Bt_RegistrarCliente.Name = "Bt_RegistrarCliente"
+        Me.Bt_RegistrarCliente.Size = New System.Drawing.Size(103, 23)
+        Me.Bt_RegistrarCliente.TabIndex = 1
+        Me.Bt_RegistrarCliente.Text = "Registrar Cliente"
+        Me.Bt_RegistrarCliente.UseVisualStyleBackColor = True
         '
         'Frm_ListaClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(710, 286)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(652, 286)
+        Me.Controls.Add(Me.Bt_RegistrarCliente)
         Me.Controls.Add(Me.Dgv_ListaClientes)
         Me.Name = "Frm_ListaClientes"
         Me.Text = "Frm_ListaClientes"
@@ -60,5 +60,5 @@ Partial Class Frm_ListaClientes
 
     End Sub
     Friend WithEvents Dgv_ListaClientes As System.Windows.Forms.DataGridView
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Bt_RegistrarCliente As System.Windows.Forms.Button
 End Class

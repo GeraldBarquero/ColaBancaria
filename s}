@@ -1,0 +1,68 @@
+[33mcommit 52c61e3c185a0e6e797e7c06188df948786ed3f8[m
+Merge: 571248a 997b5d7
+Author: Gerald <gerald.bv1@gmail.com>
+Date:   Fri Jul 25 16:16:35 2014 -0600
+
+    Merge branch 'master' of https://github.com/proyectosuia/ColaBancaria
+    
+    Conflicts:
+    	ColasBancarias.suo
+    	ColasBancarias/Frm_Inicio.vb
+
+[33mcommit 571248a3a57c2cb8d5d5d76bd13187cb82759033[m
+Author: Gerald <gerald.bv1@gmail.com>
+Date:   Fri Jul 25 16:07:42 2014 -0600
+
+    Creación del formulario Lista Clientes
+
+[33mcommit 997b5d7a169590e89c24f67bbc794781f2e2e8b7[m
+Author: Roberto <rvalverdem.85@gmail.com>
+Date:   Fri Jul 25 15:59:03 2014 -0600
+
+    Formulario para nuevo cliente e imaganes
+
+[33mcommit ae8c6f746f9dbb02b9bdbbf10c9401c1df190e7d[m
+Merge: df688b5 b193a2a
+Author: Gerald <gerald.bv1@gmail.com>
+Date:   Fri Jul 25 14:45:34 2014 -0600
+
+    Merge branch 'master' of https://github.com/proyectosuia/ColaBancaria
+    
+    Conflicts:
+    	ColasBancarias.suo
+
+[33mcommit df688b5536216361ee4ee5020940b55cb754cf23[m
+Author: Gerald <gerald.bv1@gmail.com>
+Date:   Fri Jul 25 14:35:42 2014 -0600
+
+    Creación de la clase métodos y los formularios
+
+[33mcommit b193a2ab6584537c93daa229851f59c1cbe7c31b[m
+Author: Roberto <rvalverdem.85@gmail.com>
+Date:   Fri Jul 25 11:47:05 2014 -0600
+
+    propiedades y constructor para cada objeto
+
+[33mcommit d34c2c9dfc4cfb28d63175d1e48d8d6638eae0fd[m
+Author: Gerald <gerald.bv1@gmail.com>
+Date:   Fri Jul 25 10:26:48 2014 -0600
+
+    Versión con las clases de conexión a la base y las BLL
+
+[33mcommit 7c22b8341e826024fe3f01638d5bb7c73b6f960e[m
+Author: Roberto <rvalverdem.85@gmail.com>
+Date:   Sat Jul 19 17:34:58 2014 -0600
+
+    Actualizacion del repo en la maquina de Roberto
+
+[33mcommit ba121a800b0691bcac3c3dc03ac0aed69a626cbd[m
+Author: proyectosuia <gerald.bv1@gmail.com>
+Date:   Sat Jul 19 16:28:36 2014 -0600
+
+    Creación de Repositorio principal
+
+[33mcommit 977fcc9ea7c27a54d28b8a4889ffe22d373d38d4[m
+Author: proyectosuia <gerald.bv1@gmail.com>
+Date:   Sat Jul 19 16:24:17 2014 -0600
+
+    Creación del proyecto

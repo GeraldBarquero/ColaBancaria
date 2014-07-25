@@ -1,8 +1,9 @@
 ﻿Imports ColasBancarias.DAO
+Imports ColasBancarias.Entidades
 
 Public Class BllCliente
     Dim objeto As Integer
-    Dim ejecutar As New MetodosOracle.MetodosOracle
+    Dim ejecutar As New MetodosCliente.MetodosCliente
 
     Public Function consultarCliente(objeto)
         Dim tablaCliente As New DataTable()
@@ -19,4 +20,8 @@ Public Class BllCliente
 
         Return tablaListaCliente
     End Function
+
+    Public Sub insertarCliente(ByVal datosCliente As OBJETOS.ObjCliente)
+        ejecutar.insertarCliente(datosCliente)
+    End Sub
 End Class

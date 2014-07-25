@@ -99,10 +99,10 @@
     <Compile Include="Frm_Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_ListaCajerosvb.Designer.vb">
-      <DependentUpon>Frm_ListaCajerosvb.vb</DependentUpon>
+    <Compile Include="Frm_ListaCajeros.Designer.vb">
+      <DependentUpon>Frm_ListaCajeros.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_ListaCajerosvb.vb">
+    <Compile Include="Frm_ListaCajeros.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_ListaClientes.Designer.vb">
@@ -116,10 +116,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Frm_NuevoCliente.Designer.vb">
-      <DependentUpon>Frm_NuevoCliente.vb</DependentUpon>
+    <Compile Include="Frm_RegistroCliente.Designer.vb">
+      <DependentUpon>Frm_RegistroCliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_NuevoCliente.vb">
+    <Compile Include="Frm_RegistroCliente.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -138,8 +138,8 @@
     <EmbeddedResource Include="Frm_Inicio.resx">
       <DependentUpon>Frm_Inicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_ListaCajerosvb.resx">
-      <DependentUpon>Frm_ListaCajerosvb.vb</DependentUpon>
+    <EmbeddedResource Include="Frm_ListaCajeros.resx">
+      <DependentUpon>Frm_ListaCajeros.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ListaClientes.resx">
       <DependentUpon>Frm_ListaClientes.vb</DependentUpon>
@@ -150,8 +150,8 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_NuevoCliente.resx">
-      <DependentUpon>Frm_NuevoCliente.vb</DependentUpon>
+    <EmbeddedResource Include="Frm_RegistroCliente.resx">
+      <DependentUpon>Frm_RegistroCliente.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

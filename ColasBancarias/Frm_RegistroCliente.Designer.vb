@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Frm_NuevoCliente
+Partial Class Frm_RegistroCliente
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -31,7 +31,7 @@ Partial Class Frm_NuevoCliente
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Btn_CrearCliente = New System.Windows.Forms.Button()
         Me.Lb_TipoCliente = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Cmb_TipoCliente = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Lb_CedulaCliente
@@ -55,7 +55,7 @@ Partial Class Frm_NuevoCliente
         'Lb_EdadCliente
         '
         Me.Lb_EdadCliente.AutoSize = True
-        Me.Lb_EdadCliente.Location = New System.Drawing.Point(42, 110)
+        Me.Lb_EdadCliente.Location = New System.Drawing.Point(42, 114)
         Me.Lb_EdadCliente.Name = "Lb_EdadCliente"
         Me.Lb_EdadCliente.Size = New System.Drawing.Size(32, 13)
         Me.Lb_EdadCliente.TabIndex = 2
@@ -63,21 +63,21 @@ Partial Class Frm_NuevoCliente
         '
         'Txt_CedulaCliente
         '
-        Me.Txt_CedulaCliente.Location = New System.Drawing.Point(132, 28)
+        Me.Txt_CedulaCliente.Location = New System.Drawing.Point(130, 28)
         Me.Txt_CedulaCliente.Name = "Txt_CedulaCliente"
         Me.Txt_CedulaCliente.Size = New System.Drawing.Size(100, 20)
         Me.Txt_CedulaCliente.TabIndex = 3
         '
         'Txt_NombreCliente
         '
-        Me.Txt_NombreCliente.Location = New System.Drawing.Point(132, 72)
+        Me.Txt_NombreCliente.Location = New System.Drawing.Point(130, 69)
         Me.Txt_NombreCliente.Name = "Txt_NombreCliente"
         Me.Txt_NombreCliente.Size = New System.Drawing.Size(100, 20)
         Me.Txt_NombreCliente.TabIndex = 4
         '
         'Txt_EdadCliente
         '
-        Me.Txt_EdadCliente.Location = New System.Drawing.Point(132, 107)
+        Me.Txt_EdadCliente.Location = New System.Drawing.Point(130, 107)
         Me.Txt_EdadCliente.Name = "Txt_EdadCliente"
         Me.Txt_EdadCliente.Size = New System.Drawing.Size(100, 20)
         Me.Txt_EdadCliente.TabIndex = 5
@@ -109,20 +109,21 @@ Partial Class Frm_NuevoCliente
         Me.Lb_TipoCliente.TabIndex = 8
         Me.Lb_TipoCliente.Text = "Tipo Cliente"
         '
-        'ComboBox1
+        'Cmb_TipoCliente
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(130, 139)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 9
+        Me.Cmb_TipoCliente.FormattingEnabled = True
+        Me.Cmb_TipoCliente.Items.AddRange(New Object() {"Discapacitado", "Adulto Mayor", "Cliente Interno", "Cliente Externo"})
+        Me.Cmb_TipoCliente.Location = New System.Drawing.Point(130, 139)
+        Me.Cmb_TipoCliente.Name = "Cmb_TipoCliente"
+        Me.Cmb_TipoCliente.Size = New System.Drawing.Size(121, 21)
+        Me.Cmb_TipoCliente.TabIndex = 9
         '
-        'Frm_NuevoCliente
+        'Frm_RegistroCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Cmb_TipoCliente)
         Me.Controls.Add(Me.Lb_TipoCliente)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Btn_CrearCliente)
@@ -132,7 +133,7 @@ Partial Class Frm_NuevoCliente
         Me.Controls.Add(Me.Lb_EdadCliente)
         Me.Controls.Add(Me.Lb_NombreCliente)
         Me.Controls.Add(Me.Lb_CedulaCliente)
-        Me.Name = "Frm_NuevoCliente"
+        Me.Name = "Frm_RegistroCliente"
         Me.Text = "NuevoCliente"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -147,5 +148,5 @@ Partial Class Frm_NuevoCliente
     Friend WithEvents Btn_CrearCliente As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Lb_TipoCliente As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Cmb_TipoCliente As System.Windows.Forms.ComboBox
 End Class
