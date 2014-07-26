@@ -60,7 +60,7 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ColasBancarias.UI.Frm_FilaClientes</StartupObject>
+    <StartupObject>ColasBancarias.UI.Frm_Inicio</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />

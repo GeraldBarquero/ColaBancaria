@@ -28,4 +28,9 @@ Public Class Frm_RegistroCliente
             MessageBox.Show("Error: " + ex.Message, "Error al insertar Cliente", MessageBoxButtons.OK, MessageBoxIcon.[Error])
         End Try
     End Sub
+
+    Private Sub Btn_CancelarRegistroCliente_Click(sender As System.Object, e As System.EventArgs) Handles Btn_CancelarRegistroCliente.Click
+        Me.Close()
+
+    End Sub
 End Class
