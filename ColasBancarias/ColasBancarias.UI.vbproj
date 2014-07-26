@@ -181,6 +181,14 @@
   <ItemGroup>
     <None Include="Resources\Cajero.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\anciano.PNG" />
+    <Content Include="Resources\ciego.PNG" />
+    <Content Include="Resources\hombre.PNG" />
+    <Content Include="Resources\hombre2.PNG" />
+    <Content Include="Resources\mujer.PNG" />
+    <Content Include="Resources\mujer2.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
