@@ -1,4 +1,4 @@
-﻿Public Class Frm_Inicio
+﻿Public Class Frm_Menu
 
     Private Sub Bt_Clientes_Click(sender As System.Object, e As System.EventArgs) Handles Bt_Clientes.Click
         Dim ListaClientes As New Frm_ListaClientes
@@ -20,7 +20,7 @@
         ListaCajeros.ShowDialog()
     End Sub
 
-    Private Sub Bt_FilaCliente_Click(sender As System.Object, e As System.EventArgs) Handles Bt_FilaCliente.Click
+    Private Sub Bt_FilaCliente_Click(sender As System.Object, e As System.EventArgs)
         Dim FilaClientes As New Frm_FilaClientes
         FilaClientes.ShowDialog()
 

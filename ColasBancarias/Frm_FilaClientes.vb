@@ -2,9 +2,11 @@
 Imports System.Windows.Forms
 Imports ColasBancarias.BLL
 Imports ColasBancarias.Entidades
+Imports ColasBancarias.Entidades.OBJETOS
 
 Public Class Frm_FilaClientes
     Dim ejecutar As New BllCajero
+    Dim ejecutar2 As New BllCliente
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.KeyPreview = True
@@ -62,7 +64,8 @@ Public Class Frm_FilaClientes
 
             End Select
             idCajero = datosCajero.id_cajero
-            MessageBox.Show("El cajero número : " & idCajero & +" salio a almorzar.")
+            MessageBox.Show("El cajero número : " & idCajero & " salio a almorzar.")
+
 
         Catch ex As Exception
             MessageBox.Show("Error: " + ex.Message, "Error al salir el Cajero", MessageBoxButtons.OK, MessageBoxIcon.[Error])
@@ -98,11 +101,24 @@ Public Class Frm_FilaClientes
 
             End Select
             idCajero = datosCajero.id_cajero
-            MessageBox.Show("El cajero número : " & idCajero & +" entro a trabajar.")
+            MessageBox.Show("El cajero número : " & idCajero & " entro a trabajar.")
 
         Catch ex As Exception
             MessageBox.Show("Error: " + ex.Message, "Error al entrar el Cajero", MessageBoxButtons.OK, MessageBoxIcon.[Error])
 
         End Try
+    End Sub
+
+    Private Sub btn_RefrescarFila_Click(sender As System.Object, e As System.EventArgs) Handles btn_RefrescarFila.Click
+        Dim datosFila As New ObjFilaCliente
+        ejecutar2.RefrescarFilaClientes(datosFila)
+        MessageBox.Show("Procedimiento ejecutado Correctamente ")
+    End Sub
+
+    Private Sub Bnt_Menu_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Menu.Click
+
+        Dim MenuPrincipal As New Frm_Menu
+        MenuPrincipal.ShowDialog()
+
     End Sub
 End Class

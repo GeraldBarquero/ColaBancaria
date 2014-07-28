@@ -80,5 +80,23 @@ Namespace MetodosCliente
                 MessageBox.Show("Error: " + ex.Message, "Error al insertar Cliente", MessageBoxButtons.OK, MessageBoxIcon.[Error])
             End Try
         End Sub
+
+        Public Sub RefrescarFila(ByRef objFilacliente As OBJETOS.ObjFilaCliente)
+            Try
+                Dim conn As New ConeccionOracle.ConeccionOracle()
+                If conn.connection.State = ConnectionState.Closed Then
+                    conn.connection.Open()
+                End If
+                conn.cmd = New OracleCommand("SIGUIENTE_FILA", conn.connection)
+                conn.cmd.CommandType = CommandType.StoredProcedure
+
+
+                conn.cmd.Dispose()
+                conn.connection.Close()
+
+            Catch ex As Exception
+                MessageBox.Show("Error: " + ex.Message, "Error al insertar Cliente", MessageBoxButtons.OK, MessageBoxIcon.[Error])
+            End Try
+        End Sub
     End Class
 End Namespace

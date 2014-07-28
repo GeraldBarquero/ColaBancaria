@@ -24,4 +24,10 @@ Public Class BllCliente
     Public Sub insertarCliente(ByVal datosCliente As OBJETOS.ObjCliente)
         ejecutar.insertarCliente(datosCliente)
     End Sub
+
+    Public Sub RefrescarFilaClientes(ByVal datosFila As OBJETOS.ObjFilaCliente)
+        ejecutar.RefrescarFila(datosFila)
+    End Sub
+
+
 End Class

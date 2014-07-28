@@ -60,7 +60,7 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ColasBancarias.UI.Frm_Inicio</StartupObject>
+    <StartupObject>ColasBancarias.UI.Frm_FilaClientes</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -93,10 +93,10 @@
     <Compile Include="Frm_FilaClientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Inicio.Designer.vb">
-      <DependentUpon>Frm_Inicio.vb</DependentUpon>
+    <Compile Include="Frm_Menu.Designer.vb">
+      <DependentUpon>Frm_Menu.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Inicio.vb">
+    <Compile Include="Frm_Menu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_ListaCajeros.Designer.vb">
@@ -141,8 +141,8 @@
     <EmbeddedResource Include="Frm_FilaClientes.resx">
       <DependentUpon>Frm_FilaClientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Inicio.resx">
-      <DependentUpon>Frm_Inicio.vb</DependentUpon>
+    <EmbeddedResource Include="Frm_Menu.resx">
+      <DependentUpon>Frm_Menu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ListaCajeros.resx">
       <DependentUpon>Frm_ListaCajeros.vb</DependentUpon>
@@ -182,14 +182,20 @@
     <None Include="Resources\Cajero.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\AddCliente.png" />
+    <None Include="Resources\AddEmpleados.png" />
     <Content Include="Resources\anciano.PNG" />
+    <None Include="Resources\Refresh.png" />
     <None Include="Resources\Stop.png" />
     <None Include="Resources\Play.png" />
     <None Include="Resources\ciega.PNG" />
     <Content Include="Resources\ciego.PNG" />
     <None Include="Resources\forward.png" />
+    <None Include="Resources\clientes.PNG" />
+    <None Include="Resources\empleados.PNG" />
     <Content Include="Resources\hombre.PNG" />
     <Content Include="Resources\hombre2.PNG" />
+    <None Include="Resources\menu.png" />
     <Content Include="Resources\mujer.PNG" />
     <Content Include="Resources\mujer2.PNG" />
   </ItemGroup>
