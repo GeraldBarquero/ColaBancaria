@@ -183,7 +183,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\anciano.PNG" />
+    <None Include="Resources\Stop.png" />
+    <None Include="Resources\Play.png" />
+    <None Include="Resources\ciega.PNG" />
     <Content Include="Resources\ciego.PNG" />
+    <None Include="Resources\forward.png" />
     <Content Include="Resources\hombre.PNG" />
     <Content Include="Resources\hombre2.PNG" />
     <Content Include="Resources\mujer.PNG" />

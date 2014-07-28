@@ -49,5 +49,30 @@ Public Class MetodosCajero
         Catch ex As Exception
             MessageBox.Show("Error: " + ex.Message, "Error al insertar Cajero", MessageBoxButtons.OK, MessageBoxIcon.[Error])
         End Try
+
     End Sub
+
+    Public Sub SalidaAlmuerzoCafeOtros(ByVal objCajero As OBJETOS.ObjCajero)
+        Try
+            Dim conn As New ConeccionOracle.ConeccionOracle()
+            If conn.connection.State = ConnectionState.Closed Then
+                conn.connection.Open()
+            End If
+
+            conn.cmd = New OracleCommand("SALIDA_ALMUERZO_CAFE_OTROS", conn.connection)
+            conn.cmd.CommandType = CommandType.StoredProcedure
+            conn.cmd.Parameters.Add("PID_CAJERO", OracleDbType.Int32, objCajero.id_cajero, ParameterDirection.Input)
+            conn.cmd.ExecuteReader()
+            conn.cmd.Dispose()
+            conn.connection.Close()
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
+
+
+
+
+
 End Class
