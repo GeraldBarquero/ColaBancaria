@@ -52,16 +52,17 @@ Public Class MetodosCajero
 
     End Sub
 
-    Public Sub SalidaAlmuerzoCafeOtros(ByVal objCajero As OBJETOS.ObjCajero)
+    Public Sub AlmuerzoCafeOtros(ByVal objCajero As OBJETOS.ObjCajero, ByVal accion As String)
         Try
             Dim conn As New ConeccionOracle.ConeccionOracle()
             If conn.connection.State = ConnectionState.Closed Then
                 conn.connection.Open()
             End If
 
-            conn.cmd = New OracleCommand("SALIDA_ALMUERZO_CAFE_OTROS", conn.connection)
+            conn.cmd = New OracleCommand("ALMUERZO_CAFE_OTROS", conn.connection)
             conn.cmd.CommandType = CommandType.StoredProcedure
             conn.cmd.Parameters.Add("PID_CAJERO", OracleDbType.Int32, objCajero.id_cajero, ParameterDirection.Input)
+            conn.cmd.Parameters.Add("PACCION", OracleDbType.Varchar2, accion, ParameterDirection.Input)
             conn.cmd.ExecuteReader()
             conn.cmd.Dispose()
             conn.connection.Close()

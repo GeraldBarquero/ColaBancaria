@@ -22,20 +22,20 @@ Partial Class Frm_FilaClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Bnt_Trabajar = New System.Windows.Forms.Button()
+        Me.Bnt_Trabajar1 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Bnt_Siguente1 = New System.Windows.Forms.Button()
         Me.Bnt_PararTrabajo1 = New System.Windows.Forms.Button()
         Me.Bnt_PararTrabajo2 = New System.Windows.Forms.Button()
         Me.Bnt_Siguente2 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Bnt_Trabajar2 = New System.Windows.Forms.Button()
         Me.Bnt_PararTrabajo4 = New System.Windows.Forms.Button()
         Me.Bnt_Siguente4 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Bnt_Trabajar4 = New System.Windows.Forms.Button()
         Me.Bnt_PararTrabajo3 = New System.Windows.Forms.Button()
         Me.Bnt_Siguente3 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Bnt_Trabajar3 = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Ciego = New System.Windows.Forms.PictureBox()
@@ -46,14 +46,14 @@ Partial Class Frm_FilaClientes
         CType(Me.Ciego, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Bnt_Trabajar
+        'Bnt_Trabajar1
         '
-        Me.Bnt_Trabajar.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
-        Me.Bnt_Trabajar.Location = New System.Drawing.Point(12, 21)
-        Me.Bnt_Trabajar.Name = "Bnt_Trabajar"
-        Me.Bnt_Trabajar.Size = New System.Drawing.Size(46, 40)
-        Me.Bnt_Trabajar.TabIndex = 4
-        Me.Bnt_Trabajar.UseVisualStyleBackColor = True
+        Me.Bnt_Trabajar1.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
+        Me.Bnt_Trabajar1.Location = New System.Drawing.Point(12, 21)
+        Me.Bnt_Trabajar1.Name = "Bnt_Trabajar1"
+        Me.Bnt_Trabajar1.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_Trabajar1.TabIndex = 4
+        Me.Bnt_Trabajar1.UseVisualStyleBackColor = True
         '
         'PictureBox2
         '
@@ -112,14 +112,14 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Siguente2.TabIndex = 10
         Me.Bnt_Siguente2.UseVisualStyleBackColor = True
         '
-        'Button6
+        'Bnt_Trabajar2
         '
-        Me.Button6.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
-        Me.Button6.Location = New System.Drawing.Point(214, 21)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(46, 40)
-        Me.Button6.TabIndex = 9
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Bnt_Trabajar2.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
+        Me.Bnt_Trabajar2.Location = New System.Drawing.Point(214, 21)
+        Me.Bnt_Trabajar2.Name = "Bnt_Trabajar2"
+        Me.Bnt_Trabajar2.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_Trabajar2.TabIndex = 9
+        Me.Bnt_Trabajar2.UseVisualStyleBackColor = True
         '
         'Bnt_PararTrabajo4
         '
@@ -139,14 +139,14 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Siguente4.TabIndex = 18
         Me.Bnt_Siguente4.UseVisualStyleBackColor = True
         '
-        'Button9
+        'Bnt_Trabajar4
         '
-        Me.Button9.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
-        Me.Button9.Location = New System.Drawing.Point(610, 21)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(46, 40)
-        Me.Button9.TabIndex = 17
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.Bnt_Trabajar4.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
+        Me.Bnt_Trabajar4.Location = New System.Drawing.Point(610, 21)
+        Me.Bnt_Trabajar4.Name = "Bnt_Trabajar4"
+        Me.Bnt_Trabajar4.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_Trabajar4.TabIndex = 17
+        Me.Bnt_Trabajar4.UseVisualStyleBackColor = True
         '
         'Bnt_PararTrabajo3
         '
@@ -166,14 +166,14 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Siguente3.TabIndex = 15
         Me.Bnt_Siguente3.UseVisualStyleBackColor = True
         '
-        'Button12
+        'Bnt_Trabajar3
         '
-        Me.Button12.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
-        Me.Button12.Location = New System.Drawing.Point(408, 21)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(46, 40)
-        Me.Button12.TabIndex = 14
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.Bnt_Trabajar3.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
+        Me.Bnt_Trabajar3.Location = New System.Drawing.Point(408, 21)
+        Me.Bnt_Trabajar3.Name = "Bnt_Trabajar3"
+        Me.Bnt_Trabajar3.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_Trabajar3.TabIndex = 14
+        Me.Bnt_Trabajar3.UseVisualStyleBackColor = True
         '
         'PictureBox3
         '
@@ -212,18 +212,18 @@ Partial Class Frm_FilaClientes
         Me.Controls.Add(Me.Ciego)
         Me.Controls.Add(Me.Bnt_PararTrabajo4)
         Me.Controls.Add(Me.Bnt_Siguente4)
-        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Bnt_Trabajar4)
         Me.Controls.Add(Me.Bnt_PararTrabajo3)
         Me.Controls.Add(Me.Bnt_Siguente3)
-        Me.Controls.Add(Me.Button12)
+        Me.Controls.Add(Me.Bnt_Trabajar3)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Bnt_PararTrabajo2)
         Me.Controls.Add(Me.Bnt_Siguente2)
-        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Bnt_Trabajar2)
         Me.Controls.Add(Me.Bnt_PararTrabajo1)
         Me.Controls.Add(Me.Bnt_Siguente1)
-        Me.Controls.Add(Me.Bnt_Trabajar)
+        Me.Controls.Add(Me.Bnt_Trabajar1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
@@ -239,18 +239,18 @@ Partial Class Frm_FilaClientes
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents Bnt_Trabajar As System.Windows.Forms.Button
+    Friend WithEvents Bnt_Trabajar1 As System.Windows.Forms.Button
     Friend WithEvents Bnt_Siguente1 As System.Windows.Forms.Button
     Friend WithEvents Bnt_PararTrabajo1 As System.Windows.Forms.Button
     Friend WithEvents Bnt_PararTrabajo2 As System.Windows.Forms.Button
     Friend WithEvents Bnt_Siguente2 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents Bnt_Trabajar2 As System.Windows.Forms.Button
     Friend WithEvents Bnt_PararTrabajo4 As System.Windows.Forms.Button
     Friend WithEvents Bnt_Siguente4 As System.Windows.Forms.Button
-    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents Bnt_Trabajar4 As System.Windows.Forms.Button
     Friend WithEvents Bnt_PararTrabajo3 As System.Windows.Forms.Button
     Friend WithEvents Bnt_Siguente3 As System.Windows.Forms.Button
-    Friend WithEvents Button12 As System.Windows.Forms.Button
+    Friend WithEvents Bnt_Trabajar3 As System.Windows.Forms.Button
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents Ciego As System.Windows.Forms.PictureBox

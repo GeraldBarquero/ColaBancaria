@@ -17,7 +17,7 @@ Public Class BllCajero
         ejecutar.insertarCajero(datosCajero)
     End Sub
 
-    Public Sub SalidaAlmuerzoCafeOtros(ByVal datosCajero As OBJETOS.ObjCajero)
-        ejecutar.SalidaAlmuerzoCafeOtros(datosCajero)
+    Public Sub AlmuerzoCafeOtros(ByVal datosCajero As OBJETOS.ObjCajero, ByVal accion As String)
+        ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
     End Sub
 End Class
