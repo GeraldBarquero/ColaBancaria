@@ -10,6 +10,7 @@ Public Class Frm_RegistroCliente
             datosCliente.cedula_cliente = Txt_CedulaCliente.Text
             datosCliente.edad_cliente = Txt_EdadCliente.Text
             datosCliente.nombre_cliente = Txt_NombreCliente.Text
+            datosCliente.sexo_cliente = Cmb_SexoCliente.Text
             Select Case Cmb_TipoCliente.Text
                 Case "Discapacitado"
                     datosCliente.id_tipo_cliente = 1

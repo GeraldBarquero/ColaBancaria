@@ -15,6 +15,7 @@ Public Class Frm_RegistroCajero
         Try
             datosCajero.cedula_cajero = Txt_CedulaCajero.Text
             datosCajero.nombre_cajero = Txt_NombreCajero.Text
+            datosCajero.sexo_cajero = Cmb_SexoCajero.Text
             ejecutar.insertarCajero(datosCajero)
 
             MessageBox.Show("Se registro correctamente el cajero")

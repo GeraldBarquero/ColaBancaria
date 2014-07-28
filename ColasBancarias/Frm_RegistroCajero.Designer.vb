@@ -28,6 +28,8 @@ Partial Class Frm_RegistroCajero
         Me.Txt_NombreCajero = New System.Windows.Forms.TextBox()
         Me.Btn_CancelarRegistroCajero = New System.Windows.Forms.Button()
         Me.Btn_CrearCajero = New System.Windows.Forms.Button()
+        Me.Lb_SexoCajero = New System.Windows.Forms.Label()
+        Me.Cmb_SexoCajero = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Lb_CedulaCajero
@@ -80,11 +82,31 @@ Partial Class Frm_RegistroCajero
         Me.Btn_CrearCajero.TabIndex = 4
         Me.Btn_CrearCajero.UseVisualStyleBackColor = True
         '
+        'Lb_SexoCajero
+        '
+        Me.Lb_SexoCajero.AutoSize = True
+        Me.Lb_SexoCajero.Location = New System.Drawing.Point(31, 107)
+        Me.Lb_SexoCajero.Name = "Lb_SexoCajero"
+        Me.Lb_SexoCajero.Size = New System.Drawing.Size(31, 13)
+        Me.Lb_SexoCajero.TabIndex = 6
+        Me.Lb_SexoCajero.Text = "Sexo"
+        '
+        'Cmb_SexoCajero
+        '
+        Me.Cmb_SexoCajero.FormattingEnabled = True
+        Me.Cmb_SexoCajero.Items.AddRange(New Object() {"Hombre", "Mujer", "Otro"})
+        Me.Cmb_SexoCajero.Location = New System.Drawing.Point(101, 104)
+        Me.Cmb_SexoCajero.Name = "Cmb_SexoCajero"
+        Me.Cmb_SexoCajero.Size = New System.Drawing.Size(121, 21)
+        Me.Cmb_SexoCajero.TabIndex = 7
+        '
         'Frm_RegistroCajero
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.Cmb_SexoCajero)
+        Me.Controls.Add(Me.Lb_SexoCajero)
         Me.Controls.Add(Me.Btn_CancelarRegistroCajero)
         Me.Controls.Add(Me.Btn_CrearCajero)
         Me.Controls.Add(Me.Txt_NombreCajero)
@@ -103,4 +125,6 @@ Partial Class Frm_RegistroCajero
     Friend WithEvents Txt_NombreCajero As System.Windows.Forms.TextBox
     Friend WithEvents Btn_CrearCajero As System.Windows.Forms.Button
     Friend WithEvents Btn_CancelarRegistroCajero As System.Windows.Forms.Button
+    Friend WithEvents Lb_SexoCajero As System.Windows.Forms.Label
+    Friend WithEvents Cmb_SexoCajero As System.Windows.Forms.ComboBox
 End Class

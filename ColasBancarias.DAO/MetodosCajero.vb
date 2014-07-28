@@ -22,7 +22,7 @@ Public Class MetodosCajero
             Dim dataReader As OracleDataReader = conn.cmd.ExecuteReader()
 
             tablaListaCajeros.Load(dataReader)
-
+            conn.cmd.Dispose()
             conn.connection.Close()
             Return tablaListaCajeros
         Catch ex As Exception
@@ -42,6 +42,7 @@ Public Class MetodosCajero
 
             conn.cmd.Parameters.Add("PCEDULA", OracleDbType.Varchar2, ObjCajero.cedula_cajero, ParameterDirection.Input)
             conn.cmd.Parameters.Add("PNOMBRE", OracleDbType.Varchar2, ObjCajero.nombre_cajero, ParameterDirection.Input)
+            conn.cmd.Parameters.Add("PSEXO", OracleDbType.Varchar2, ObjCajero.sexo_cajero, ParameterDirection.Input)
             conn.cmd.ExecuteReader()
 
             conn.cmd.Dispose()

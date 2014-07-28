@@ -250,7 +250,7 @@ Partial Class Frm_FilaClientes
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Name = "Frm_FilaClientes"
-        Me.Text = "Frm_FilaClientes"
+        Me.Text = "Fila de Atención de los Clientes"
         CType(Me.Ciego, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()

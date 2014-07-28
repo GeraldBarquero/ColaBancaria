@@ -26,7 +26,7 @@ Namespace MetodosCliente
                 Dim dataReader As OracleDataReader = conn.cmd.ExecuteReader()
 
                 tablaClientes.Load(dataReader)
-
+                conn.cmd.Dispose()
                 conn.connection.Close()
                 Return tablaClientes
             Catch ex As Exception
@@ -50,7 +50,7 @@ Namespace MetodosCliente
                 Dim dataReader As OracleDataReader = conn.cmd.ExecuteReader()
 
                 tablaListaClientes.Load(dataReader)
-
+                conn.cmd.Dispose()
                 conn.connection.Close()
                 Return tablaListaClientes
             Catch ex As Exception
@@ -72,6 +72,7 @@ Namespace MetodosCliente
                 conn.cmd.Parameters.Add("PCEDULA", OracleDbType.Varchar2, ObjCliente.cedula_cliente, ParameterDirection.Input)
                 conn.cmd.Parameters.Add("PNOMBRE", OracleDbType.Varchar2, ObjCliente.nombre_cliente, ParameterDirection.Input)
                 conn.cmd.Parameters.Add("PEDAD_CLIENTE", OracleDbType.Int32, ObjCliente.edad_cliente, ParameterDirection.Input)
+                conn.cmd.Parameters.Add("PSEXO", OracleDbType.Varchar2, ObjCliente.sexo_cliente, ParameterDirection.Input)
                 conn.cmd.ExecuteReader()
 
                 conn.cmd.Dispose()
@@ -89,6 +90,9 @@ Namespace MetodosCliente
                 End If
                 conn.cmd = New OracleCommand("SIGUIENTE_FILA", conn.connection)
                 conn.cmd.CommandType = CommandType.StoredProcedure
+                conn.cmd.Parameters.Add("Pid_Fila_Cliente", OracleDbType.Int32, ParameterDirection.Output)
+                conn.cmd.ExecuteNonQuery()
+                MessageBox.Show("Se esta atendiendo al cliente: " & conn.cmd.Parameters("Pid_Fila_Cliente").Value.ToString)
 
 
                 conn.cmd.Dispose()

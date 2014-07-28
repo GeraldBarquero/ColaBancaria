@@ -32,6 +32,8 @@ Partial Class Frm_RegistroCliente
         Me.Btn_CrearCliente = New System.Windows.Forms.Button()
         Me.Lb_TipoCliente = New System.Windows.Forms.Label()
         Me.Cmb_TipoCliente = New System.Windows.Forms.ComboBox()
+        Me.Lb_SexoCliente = New System.Windows.Forms.Label()
+        Me.Cmb_SexoCliente = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Lb_CedulaCliente
@@ -85,7 +87,7 @@ Partial Class Frm_RegistroCliente
         'Btn_CancelarRegistroCliente
         '
         Me.Btn_CancelarRegistroCliente.Image = Global.ColasBancarias.UI.My.Resources.Resources.Cancel
-        Me.Btn_CancelarRegistroCliente.Location = New System.Drawing.Point(176, 186)
+        Me.Btn_CancelarRegistroCliente.Location = New System.Drawing.Point(176, 208)
         Me.Btn_CancelarRegistroCliente.Name = "Btn_CancelarRegistroCliente"
         Me.Btn_CancelarRegistroCliente.Size = New System.Drawing.Size(75, 50)
         Me.Btn_CancelarRegistroCliente.TabIndex = 7
@@ -94,7 +96,7 @@ Partial Class Frm_RegistroCliente
         'Btn_CrearCliente
         '
         Me.Btn_CrearCliente.Image = Global.ColasBancarias.UI.My.Resources.Resources.Add
-        Me.Btn_CrearCliente.Location = New System.Drawing.Point(45, 186)
+        Me.Btn_CrearCliente.Location = New System.Drawing.Point(45, 208)
         Me.Btn_CrearCliente.Name = "Btn_CrearCliente"
         Me.Btn_CrearCliente.Size = New System.Drawing.Size(75, 50)
         Me.Btn_CrearCliente.TabIndex = 6
@@ -103,7 +105,7 @@ Partial Class Frm_RegistroCliente
         'Lb_TipoCliente
         '
         Me.Lb_TipoCliente.AutoSize = True
-        Me.Lb_TipoCliente.Location = New System.Drawing.Point(42, 142)
+        Me.Lb_TipoCliente.Location = New System.Drawing.Point(42, 177)
         Me.Lb_TipoCliente.Name = "Lb_TipoCliente"
         Me.Lb_TipoCliente.Size = New System.Drawing.Size(63, 13)
         Me.Lb_TipoCliente.TabIndex = 8
@@ -113,16 +115,36 @@ Partial Class Frm_RegistroCliente
         '
         Me.Cmb_TipoCliente.FormattingEnabled = True
         Me.Cmb_TipoCliente.Items.AddRange(New Object() {"Discapacitado", "Adulto Mayor", "Cliente Interno", "Cliente Externo"})
-        Me.Cmb_TipoCliente.Location = New System.Drawing.Point(130, 139)
+        Me.Cmb_TipoCliente.Location = New System.Drawing.Point(130, 174)
         Me.Cmb_TipoCliente.Name = "Cmb_TipoCliente"
         Me.Cmb_TipoCliente.Size = New System.Drawing.Size(121, 21)
         Me.Cmb_TipoCliente.TabIndex = 9
+        '
+        'Lb_SexoCliente
+        '
+        Me.Lb_SexoCliente.AutoSize = True
+        Me.Lb_SexoCliente.Location = New System.Drawing.Point(42, 143)
+        Me.Lb_SexoCliente.Name = "Lb_SexoCliente"
+        Me.Lb_SexoCliente.Size = New System.Drawing.Size(31, 13)
+        Me.Lb_SexoCliente.TabIndex = 10
+        Me.Lb_SexoCliente.Text = "Sexo"
+        '
+        'Cmb_SexoCliente
+        '
+        Me.Cmb_SexoCliente.FormattingEnabled = True
+        Me.Cmb_SexoCliente.Items.AddRange(New Object() {"Hombre", "Mujer", "Otro"})
+        Me.Cmb_SexoCliente.Location = New System.Drawing.Point(130, 143)
+        Me.Cmb_SexoCliente.Name = "Cmb_SexoCliente"
+        Me.Cmb_SexoCliente.Size = New System.Drawing.Size(121, 21)
+        Me.Cmb_SexoCliente.TabIndex = 11
         '
         'Frm_RegistroCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.ClientSize = New System.Drawing.Size(284, 310)
+        Me.Controls.Add(Me.Cmb_SexoCliente)
+        Me.Controls.Add(Me.Lb_SexoCliente)
         Me.Controls.Add(Me.Cmb_TipoCliente)
         Me.Controls.Add(Me.Lb_TipoCliente)
         Me.Controls.Add(Me.Btn_CancelarRegistroCliente)
@@ -149,4 +171,6 @@ Partial Class Frm_RegistroCliente
     Friend WithEvents Btn_CancelarRegistroCliente As System.Windows.Forms.Button
     Friend WithEvents Lb_TipoCliente As System.Windows.Forms.Label
     Friend WithEvents Cmb_TipoCliente As System.Windows.Forms.ComboBox
+    Friend WithEvents Lb_SexoCliente As System.Windows.Forms.Label
+    Friend WithEvents Cmb_SexoCliente As System.Windows.Forms.ComboBox
 End Class
