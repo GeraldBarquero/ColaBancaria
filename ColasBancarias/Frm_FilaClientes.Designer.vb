@@ -22,14 +22,9 @@ Partial Class Frm_FilaClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Bnt_Trabajar1 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Bnt_Siguente1 = New System.Windows.Forms.Button()
-        Me.Bnt_PararTrabajo1 = New System.Windows.Forms.Button()
-        Me.Bnt_PararTrabajo2 = New System.Windows.Forms.Button()
-        Me.Bnt_Siguente2 = New System.Windows.Forms.Button()
-        Me.Bnt_Trabajar2 = New System.Windows.Forms.Button()
+        Me.Bnt_Menu = New System.Windows.Forms.Button()
+        Me.btn_RefrescarFila = New System.Windows.Forms.Button()
+        Me.Ciego = New System.Windows.Forms.PictureBox()
         Me.Bnt_PararTrabajo4 = New System.Windows.Forms.Button()
         Me.Bnt_Siguente4 = New System.Windows.Forms.Button()
         Me.Bnt_Trabajar4 = New System.Windows.Forms.Button()
@@ -38,88 +33,47 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Trabajar3 = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Ciego = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Bnt_PararTrabajo2 = New System.Windows.Forms.Button()
+        Me.Bnt_Siguente2 = New System.Windows.Forms.Button()
+        Me.Bnt_Trabajar2 = New System.Windows.Forms.Button()
+        Me.Bnt_PararTrabajo1 = New System.Windows.Forms.Button()
+        Me.Bnt_Siguente1 = New System.Windows.Forms.Button()
+        Me.Bnt_Trabajar1 = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.Ciego, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Ciego, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Bnt_Trabajar1
+        'Bnt_Menu
         '
-        Me.Bnt_Trabajar1.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
-        Me.Bnt_Trabajar1.Location = New System.Drawing.Point(12, 21)
-        Me.Bnt_Trabajar1.Name = "Bnt_Trabajar1"
-        Me.Bnt_Trabajar1.Size = New System.Drawing.Size(46, 40)
-        Me.Bnt_Trabajar1.TabIndex = 4
-        Me.Bnt_Trabajar1.UseVisualStyleBackColor = True
+        Me.Bnt_Menu.Image = Global.ColasBancarias.UI.My.Resources.Resources.menu
+        Me.Bnt_Menu.Location = New System.Drawing.Point(703, 353)
+        Me.Bnt_Menu.Name = "Bnt_Menu"
+        Me.Bnt_Menu.Size = New System.Drawing.Size(42, 43)
+        Me.Bnt_Menu.TabIndex = 22
+        Me.Bnt_Menu.UseVisualStyleBackColor = True
         '
-        'PictureBox2
+        'btn_RefrescarFila
         '
-        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox2.Image = Global.ColasBancarias.UI.My.Resources.Resources.cajera
-        Me.PictureBox2.Location = New System.Drawing.Point(266, 42)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(92, 100)
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
+        Me.btn_RefrescarFila.Image = Global.ColasBancarias.UI.My.Resources.Resources.Refresh
+        Me.btn_RefrescarFila.Location = New System.Drawing.Point(12, 353)
+        Me.btn_RefrescarFila.Name = "btn_RefrescarFila"
+        Me.btn_RefrescarFila.Size = New System.Drawing.Size(46, 43)
+        Me.btn_RefrescarFila.TabIndex = 21
+        Me.btn_RefrescarFila.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'Ciego
         '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.Image = Global.ColasBancarias.UI.My.Resources.Resources.Cajero
-        Me.PictureBox1.Location = New System.Drawing.Point(64, 42)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(93, 100)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'Bnt_Siguente1
-        '
-        Me.Bnt_Siguente1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Bnt_Siguente1.Image = Global.ColasBancarias.UI.My.Resources.Resources.forward
-        Me.Bnt_Siguente1.Location = New System.Drawing.Point(12, 113)
-        Me.Bnt_Siguente1.Name = "Bnt_Siguente1"
-        Me.Bnt_Siguente1.Size = New System.Drawing.Size(46, 40)
-        Me.Bnt_Siguente1.TabIndex = 7
-        Me.Bnt_Siguente1.UseVisualStyleBackColor = True
-        '
-        'Bnt_PararTrabajo1
-        '
-        Me.Bnt_PararTrabajo1.Image = Global.ColasBancarias.UI.My.Resources.Resources._Stop
-        Me.Bnt_PararTrabajo1.Location = New System.Drawing.Point(12, 67)
-        Me.Bnt_PararTrabajo1.Name = "Bnt_PararTrabajo1"
-        Me.Bnt_PararTrabajo1.Size = New System.Drawing.Size(46, 40)
-        Me.Bnt_PararTrabajo1.TabIndex = 8
-        Me.Bnt_PararTrabajo1.UseVisualStyleBackColor = True
-        '
-        'Bnt_PararTrabajo2
-        '
-        Me.Bnt_PararTrabajo2.Image = Global.ColasBancarias.UI.My.Resources.Resources._Stop
-        Me.Bnt_PararTrabajo2.Location = New System.Drawing.Point(214, 67)
-        Me.Bnt_PararTrabajo2.Name = "Bnt_PararTrabajo2"
-        Me.Bnt_PararTrabajo2.Size = New System.Drawing.Size(46, 40)
-        Me.Bnt_PararTrabajo2.TabIndex = 11
-        Me.Bnt_PararTrabajo2.UseVisualStyleBackColor = True
-        '
-        'Bnt_Siguente2
-        '
-        Me.Bnt_Siguente2.Image = Global.ColasBancarias.UI.My.Resources.Resources.forward
-        Me.Bnt_Siguente2.Location = New System.Drawing.Point(214, 113)
-        Me.Bnt_Siguente2.Name = "Bnt_Siguente2"
-        Me.Bnt_Siguente2.Size = New System.Drawing.Size(46, 40)
-        Me.Bnt_Siguente2.TabIndex = 10
-        Me.Bnt_Siguente2.UseVisualStyleBackColor = True
-        '
-        'Bnt_Trabajar2
-        '
-        Me.Bnt_Trabajar2.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
-        Me.Bnt_Trabajar2.Location = New System.Drawing.Point(214, 21)
-        Me.Bnt_Trabajar2.Name = "Bnt_Trabajar2"
-        Me.Bnt_Trabajar2.Size = New System.Drawing.Size(46, 40)
-        Me.Bnt_Trabajar2.TabIndex = 9
-        Me.Bnt_Trabajar2.UseVisualStyleBackColor = True
+        Me.Ciego.Image = Global.ColasBancarias.UI.My.Resources.Resources.ciego
+        Me.Ciego.Location = New System.Drawing.Point(306, 284)
+        Me.Ciego.Name = "Ciego"
+        Me.Ciego.Size = New System.Drawing.Size(52, 50)
+        Me.Ciego.TabIndex = 20
+        Me.Ciego.TabStop = False
         '
         'Bnt_PararTrabajo4
         '
@@ -195,20 +149,88 @@ Partial Class Frm_FilaClientes
         Me.PictureBox4.TabIndex = 12
         Me.PictureBox4.TabStop = False
         '
-        'Ciego
+        'Bnt_PararTrabajo2
         '
-        Me.Ciego.Image = Global.ColasBancarias.UI.My.Resources.Resources.ciego
-        Me.Ciego.Location = New System.Drawing.Point(306, 284)
-        Me.Ciego.Name = "Ciego"
-        Me.Ciego.Size = New System.Drawing.Size(52, 50)
-        Me.Ciego.TabIndex = 20
-        Me.Ciego.TabStop = False
+        Me.Bnt_PararTrabajo2.Image = Global.ColasBancarias.UI.My.Resources.Resources._Stop
+        Me.Bnt_PararTrabajo2.Location = New System.Drawing.Point(214, 67)
+        Me.Bnt_PararTrabajo2.Name = "Bnt_PararTrabajo2"
+        Me.Bnt_PararTrabajo2.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_PararTrabajo2.TabIndex = 11
+        Me.Bnt_PararTrabajo2.UseVisualStyleBackColor = True
+        '
+        'Bnt_Siguente2
+        '
+        Me.Bnt_Siguente2.Image = Global.ColasBancarias.UI.My.Resources.Resources.forward
+        Me.Bnt_Siguente2.Location = New System.Drawing.Point(214, 113)
+        Me.Bnt_Siguente2.Name = "Bnt_Siguente2"
+        Me.Bnt_Siguente2.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_Siguente2.TabIndex = 10
+        Me.Bnt_Siguente2.UseVisualStyleBackColor = True
+        '
+        'Bnt_Trabajar2
+        '
+        Me.Bnt_Trabajar2.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
+        Me.Bnt_Trabajar2.Location = New System.Drawing.Point(214, 21)
+        Me.Bnt_Trabajar2.Name = "Bnt_Trabajar2"
+        Me.Bnt_Trabajar2.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_Trabajar2.TabIndex = 9
+        Me.Bnt_Trabajar2.UseVisualStyleBackColor = True
+        '
+        'Bnt_PararTrabajo1
+        '
+        Me.Bnt_PararTrabajo1.Image = Global.ColasBancarias.UI.My.Resources.Resources._Stop
+        Me.Bnt_PararTrabajo1.Location = New System.Drawing.Point(12, 67)
+        Me.Bnt_PararTrabajo1.Name = "Bnt_PararTrabajo1"
+        Me.Bnt_PararTrabajo1.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_PararTrabajo1.TabIndex = 8
+        Me.Bnt_PararTrabajo1.UseVisualStyleBackColor = True
+        '
+        'Bnt_Siguente1
+        '
+        Me.Bnt_Siguente1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Bnt_Siguente1.Image = Global.ColasBancarias.UI.My.Resources.Resources.forward
+        Me.Bnt_Siguente1.Location = New System.Drawing.Point(12, 113)
+        Me.Bnt_Siguente1.Name = "Bnt_Siguente1"
+        Me.Bnt_Siguente1.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_Siguente1.TabIndex = 7
+        Me.Bnt_Siguente1.UseVisualStyleBackColor = True
+        '
+        'Bnt_Trabajar1
+        '
+        Me.Bnt_Trabajar1.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
+        Me.Bnt_Trabajar1.Location = New System.Drawing.Point(12, 21)
+        Me.Bnt_Trabajar1.Name = "Bnt_Trabajar1"
+        Me.Bnt_Trabajar1.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_Trabajar1.TabIndex = 4
+        Me.Bnt_Trabajar1.UseVisualStyleBackColor = True
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox2.Image = Global.ColasBancarias.UI.My.Resources.Resources.cajera
+        Me.PictureBox2.Location = New System.Drawing.Point(266, 42)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(92, 100)
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.Image = Global.ColasBancarias.UI.My.Resources.Resources.Cajero
+        Me.PictureBox1.Location = New System.Drawing.Point(64, 42)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(93, 100)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Frm_FilaClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(757, 408)
+        Me.Controls.Add(Me.Bnt_Menu)
+        Me.Controls.Add(Me.btn_RefrescarFila)
         Me.Controls.Add(Me.Ciego)
         Me.Controls.Add(Me.Bnt_PararTrabajo4)
         Me.Controls.Add(Me.Bnt_Siguente4)
@@ -229,11 +251,11 @@ Partial Class Frm_FilaClientes
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Name = "Frm_FilaClientes"
         Me.Text = "Frm_FilaClientes"
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ciego, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Ciego, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -254,4 +276,6 @@ Partial Class Frm_FilaClientes
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents Ciego As System.Windows.Forms.PictureBox
+    Friend WithEvents btn_RefrescarFila As System.Windows.Forms.Button
+    Friend WithEvents Bnt_Menu As System.Windows.Forms.Button
 End Class
