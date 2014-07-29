@@ -66,19 +66,31 @@ Partial Class Frm_RegistroCajero
         '
         'Btn_CancelarRegistroCajero
         '
+        Me.Btn_CancelarRegistroCajero.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_CancelarRegistroCajero.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Btn_CancelarRegistroCajero.FlatAppearance.BorderSize = 0
+        Me.Btn_CancelarRegistroCajero.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Btn_CancelarRegistroCajero.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Btn_CancelarRegistroCajero.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_CancelarRegistroCajero.Image = Global.ColasBancarias.UI.My.Resources.Resources.Cancel
-        Me.Btn_CancelarRegistroCajero.Location = New System.Drawing.Point(162, 150)
+        Me.Btn_CancelarRegistroCajero.Location = New System.Drawing.Point(166, 159)
         Me.Btn_CancelarRegistroCajero.Name = "Btn_CancelarRegistroCajero"
-        Me.Btn_CancelarRegistroCajero.Size = New System.Drawing.Size(86, 53)
+        Me.Btn_CancelarRegistroCajero.Size = New System.Drawing.Size(35, 34)
         Me.Btn_CancelarRegistroCajero.TabIndex = 5
         Me.Btn_CancelarRegistroCajero.UseVisualStyleBackColor = True
         '
         'Btn_CrearCajero
         '
+        Me.Btn_CrearCajero.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_CrearCajero.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Btn_CrearCajero.FlatAppearance.BorderSize = 0
+        Me.Btn_CrearCajero.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Btn_CrearCajero.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Btn_CrearCajero.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_CrearCajero.Image = Global.ColasBancarias.UI.My.Resources.Resources.Add
-        Me.Btn_CrearCajero.Location = New System.Drawing.Point(31, 150)
+        Me.Btn_CrearCajero.Location = New System.Drawing.Point(83, 160)
         Me.Btn_CrearCajero.Name = "Btn_CrearCajero"
-        Me.Btn_CrearCajero.Size = New System.Drawing.Size(86, 53)
+        Me.Btn_CrearCajero.Size = New System.Drawing.Size(32, 33)
         Me.Btn_CrearCajero.TabIndex = 4
         Me.Btn_CrearCajero.UseVisualStyleBackColor = True
         '
@@ -104,7 +116,7 @@ Partial Class Frm_RegistroCajero
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.ClientSize = New System.Drawing.Size(253, 216)
         Me.Controls.Add(Me.Cmb_SexoCajero)
         Me.Controls.Add(Me.Lb_SexoCajero)
         Me.Controls.Add(Me.Btn_CancelarRegistroCajero)

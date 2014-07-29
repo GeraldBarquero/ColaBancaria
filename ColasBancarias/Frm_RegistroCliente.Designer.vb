@@ -86,19 +86,31 @@ Partial Class Frm_RegistroCliente
         '
         'Btn_CancelarRegistroCliente
         '
+        Me.Btn_CancelarRegistroCliente.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_CancelarRegistroCliente.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Btn_CancelarRegistroCliente.FlatAppearance.BorderSize = 0
+        Me.Btn_CancelarRegistroCliente.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Btn_CancelarRegistroCliente.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Btn_CancelarRegistroCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_CancelarRegistroCliente.Image = Global.ColasBancarias.UI.My.Resources.Resources.Cancel
-        Me.Btn_CancelarRegistroCliente.Location = New System.Drawing.Point(176, 208)
+        Me.Btn_CancelarRegistroCliente.Location = New System.Drawing.Point(168, 220)
         Me.Btn_CancelarRegistroCliente.Name = "Btn_CancelarRegistroCliente"
-        Me.Btn_CancelarRegistroCliente.Size = New System.Drawing.Size(75, 50)
+        Me.Btn_CancelarRegistroCliente.Size = New System.Drawing.Size(39, 38)
         Me.Btn_CancelarRegistroCliente.TabIndex = 7
         Me.Btn_CancelarRegistroCliente.UseVisualStyleBackColor = True
         '
         'Btn_CrearCliente
         '
+        Me.Btn_CrearCliente.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_CrearCliente.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Btn_CrearCliente.FlatAppearance.BorderSize = 0
+        Me.Btn_CrearCliente.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Btn_CrearCliente.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Btn_CrearCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_CrearCliente.Image = Global.ColasBancarias.UI.My.Resources.Resources.Add
-        Me.Btn_CrearCliente.Location = New System.Drawing.Point(45, 208)
+        Me.Btn_CrearCliente.Location = New System.Drawing.Point(72, 220)
         Me.Btn_CrearCliente.Name = "Btn_CrearCliente"
-        Me.Btn_CrearCliente.Size = New System.Drawing.Size(75, 50)
+        Me.Btn_CrearCliente.Size = New System.Drawing.Size(35, 38)
         Me.Btn_CrearCliente.TabIndex = 6
         Me.Btn_CrearCliente.UseVisualStyleBackColor = True
         '

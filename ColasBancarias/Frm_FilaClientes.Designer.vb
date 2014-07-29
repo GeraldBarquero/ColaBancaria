@@ -50,15 +50,31 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_Menu
         '
+        Me.Bnt_Menu.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Bnt_Menu.BackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Menu.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_Menu.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Menu.FlatAppearance.BorderSize = 0
+        Me.Bnt_Menu.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Menu.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Menu.Image = Global.ColasBancarias.UI.My.Resources.Resources.menu
         Me.Bnt_Menu.Location = New System.Drawing.Point(703, 353)
         Me.Bnt_Menu.Name = "Bnt_Menu"
         Me.Bnt_Menu.Size = New System.Drawing.Size(42, 43)
         Me.Bnt_Menu.TabIndex = 22
-        Me.Bnt_Menu.UseVisualStyleBackColor = True
+        Me.Bnt_Menu.UseVisualStyleBackColor = False
         '
         'btn_RefrescarFila
         '
+        Me.btn_RefrescarFila.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_RefrescarFila.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.btn_RefrescarFila.FlatAppearance.BorderSize = 0
+        Me.btn_RefrescarFila.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.btn_RefrescarFila.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.btn_RefrescarFila.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_RefrescarFila.Image = Global.ColasBancarias.UI.My.Resources.Resources.Refresh
         Me.btn_RefrescarFila.Location = New System.Drawing.Point(12, 353)
         Me.btn_RefrescarFila.Name = "btn_RefrescarFila"
@@ -68,6 +84,8 @@ Partial Class Frm_FilaClientes
         '
         'Ciego
         '
+        Me.Ciego.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Ciego.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Ciego.Image = Global.ColasBancarias.UI.My.Resources.Resources.ciego
         Me.Ciego.Location = New System.Drawing.Point(306, 284)
         Me.Ciego.Name = "Ciego"
@@ -77,15 +95,31 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_PararTrabajo4
         '
+        Me.Bnt_PararTrabajo4.BackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_PararTrabajo4.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo4.FlatAppearance.BorderSize = 0
+        Me.Bnt_PararTrabajo4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Bnt_PararTrabajo4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_PararTrabajo4.Image = Global.ColasBancarias.UI.My.Resources.Resources._Stop
         Me.Bnt_PararTrabajo4.Location = New System.Drawing.Point(610, 67)
         Me.Bnt_PararTrabajo4.Name = "Bnt_PararTrabajo4"
         Me.Bnt_PararTrabajo4.Size = New System.Drawing.Size(46, 40)
         Me.Bnt_PararTrabajo4.TabIndex = 19
-        Me.Bnt_PararTrabajo4.UseVisualStyleBackColor = True
+        Me.Bnt_PararTrabajo4.UseVisualStyleBackColor = False
         '
         'Bnt_Siguente4
         '
+        Me.Bnt_Siguente4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Bnt_Siguente4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_Siguente4.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Siguente4.FlatAppearance.BorderSize = 0
+        Me.Bnt_Siguente4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Siguente4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Siguente4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Siguente4.Image = Global.ColasBancarias.UI.My.Resources.Resources.forward
         Me.Bnt_Siguente4.Location = New System.Drawing.Point(610, 113)
         Me.Bnt_Siguente4.Name = "Bnt_Siguente4"
@@ -95,6 +129,12 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_Trabajar4
         '
+        Me.Bnt_Trabajar4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_Trabajar4.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Trabajar4.FlatAppearance.BorderSize = 0
+        Me.Bnt_Trabajar4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Trabajar4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Trabajar4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Trabajar4.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
         Me.Bnt_Trabajar4.Location = New System.Drawing.Point(610, 21)
         Me.Bnt_Trabajar4.Name = "Bnt_Trabajar4"
@@ -104,6 +144,12 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_PararTrabajo3
         '
+        Me.Bnt_PararTrabajo3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_PararTrabajo3.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo3.FlatAppearance.BorderSize = 0
+        Me.Bnt_PararTrabajo3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_PararTrabajo3.Image = Global.ColasBancarias.UI.My.Resources.Resources._Stop
         Me.Bnt_PararTrabajo3.Location = New System.Drawing.Point(408, 67)
         Me.Bnt_PararTrabajo3.Name = "Bnt_PararTrabajo3"
@@ -113,6 +159,12 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_Siguente3
         '
+        Me.Bnt_Siguente3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_Siguente3.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Siguente3.FlatAppearance.BorderSize = 0
+        Me.Bnt_Siguente3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Siguente3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Siguente3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Siguente3.Image = Global.ColasBancarias.UI.My.Resources.Resources.forward
         Me.Bnt_Siguente3.Location = New System.Drawing.Point(408, 113)
         Me.Bnt_Siguente3.Name = "Bnt_Siguente3"
@@ -122,6 +174,12 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_Trabajar3
         '
+        Me.Bnt_Trabajar3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_Trabajar3.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Trabajar3.FlatAppearance.BorderSize = 0
+        Me.Bnt_Trabajar3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Trabajar3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Trabajar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Trabajar3.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
         Me.Bnt_Trabajar3.Location = New System.Drawing.Point(408, 21)
         Me.Bnt_Trabajar3.Name = "Bnt_Trabajar3"
@@ -151,6 +209,12 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_PararTrabajo2
         '
+        Me.Bnt_PararTrabajo2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_PararTrabajo2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo2.FlatAppearance.BorderSize = 0
+        Me.Bnt_PararTrabajo2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_PararTrabajo2.Image = Global.ColasBancarias.UI.My.Resources.Resources._Stop
         Me.Bnt_PararTrabajo2.Location = New System.Drawing.Point(214, 67)
         Me.Bnt_PararTrabajo2.Name = "Bnt_PararTrabajo2"
@@ -160,6 +224,12 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_Siguente2
         '
+        Me.Bnt_Siguente2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_Siguente2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Siguente2.FlatAppearance.BorderSize = 0
+        Me.Bnt_Siguente2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Siguente2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Siguente2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Siguente2.Image = Global.ColasBancarias.UI.My.Resources.Resources.forward
         Me.Bnt_Siguente2.Location = New System.Drawing.Point(214, 113)
         Me.Bnt_Siguente2.Name = "Bnt_Siguente2"
@@ -169,6 +239,12 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_Trabajar2
         '
+        Me.Bnt_Trabajar2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_Trabajar2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Trabajar2.FlatAppearance.BorderSize = 0
+        Me.Bnt_Trabajar2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Trabajar2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Trabajar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Trabajar2.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
         Me.Bnt_Trabajar2.Location = New System.Drawing.Point(214, 21)
         Me.Bnt_Trabajar2.Name = "Bnt_Trabajar2"
@@ -178,6 +254,12 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_PararTrabajo1
         '
+        Me.Bnt_PararTrabajo1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_PararTrabajo1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo1.FlatAppearance.BorderSize = 0
+        Me.Bnt_PararTrabajo1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_PararTrabajo1.Image = Global.ColasBancarias.UI.My.Resources.Resources._Stop
         Me.Bnt_PararTrabajo1.Location = New System.Drawing.Point(12, 67)
         Me.Bnt_PararTrabajo1.Name = "Bnt_PararTrabajo1"
@@ -187,6 +269,12 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_Siguente1
         '
+        Me.Bnt_Siguente1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_Siguente1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Siguente1.FlatAppearance.BorderSize = 0
+        Me.Bnt_Siguente1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Siguente1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Siguente1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Siguente1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Bnt_Siguente1.Image = Global.ColasBancarias.UI.My.Resources.Resources.forward
         Me.Bnt_Siguente1.Location = New System.Drawing.Point(12, 113)
@@ -197,6 +285,12 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_Trabajar1
         '
+        Me.Bnt_Trabajar1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_Trabajar1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Trabajar1.FlatAppearance.BorderSize = 0
+        Me.Bnt_Trabajar1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Trabajar1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_Trabajar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Trabajar1.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
         Me.Bnt_Trabajar1.Location = New System.Drawing.Point(12, 21)
         Me.Bnt_Trabajar1.Name = "Bnt_Trabajar1"
