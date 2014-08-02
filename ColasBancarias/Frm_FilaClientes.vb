@@ -14,29 +14,59 @@ Public Class Frm_FilaClientes
 
 
     Private Sub Bnt_Siguente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Bnt_Siguente1.Click, Bnt_Siguente2.Click, Bnt_Siguente3.Click, Bnt_Siguente4.Click
+        Dim datosFila As New Collection
+        Dim imagen As String
+        datosFila = ejecutar2.SiguienteEnFila()
+        Lb_Contador.Text = ejecutar2.ClientesEnFila()
 
+        If Lb_Contador.Text <> "0" Then
+            imagen = "../../Resources/mujer2.PNG"
+            Select Case datosFila.Item("Prioridad")
+                Case 1
+                    imagen = "../../Resources/ciego.PNG"
+                Case 2
+                    imagen = "../../Resources/anciano.PNG"
+                Case 3
+                    imagen = "../../Resources/hombre.PNG"
+                Case 4
+                    imagen = "../../Resources/hombre2.PNG"
+            End Select
+            Select Case sender.Name()
 
-        Select Case sender.Name()
+                Case "Bnt_Siguente1"
+                    Cliente1.Location = New Point(87, 164)
+                    Cliente1.Load(imagen)
+                    Cliente1.Visible = True
+                    Cliente1.Show()
+                    Txt_NombreCliente1.Text = datosFila.Item("Nombre_Cliente")
+                Case "Bnt_Siguente2"
+                    Cliente2.Location = New Point(288, 164)
+                    Cliente2.Load(imagen)
+                    Cliente2.Visible = True
+                    Cliente2.Show()
+                    Txt_NombreCliente2.Text = datosFila.Item("Nombre_Cliente")
+                Case "Bnt_Siguente3"
 
-            Case "Bnt_Siguente1"
+                    Cliente3.Location = New Point(480, 164)
+                    Cliente3.Load(imagen)
+                    Cliente3.Visible = True
+                    Cliente3.Show()
+                    Txt_NombreCliente3.Text = datosFila.Item("Nombre_Cliente")
+                Case "Bnt_Siguente4"
+                    Cliente4.Location = New Point(682, 164)
+                    Cliente4.Load(imagen)
+                    Cliente4.Visible = True
+                    Cliente4.Show()
+                    Txt_NombreCliente4.Text = datosFila.Item("Nombre_Cliente")
+            End Select
+        Else
+            PrimerCliente.Load("../../Resources/sinCliente.png")
 
-                Ciego.Location = New Point(87, 164)
-
-            Case "Bnt_Siguente2"
-
-                Ciego.Location = New Point(288, 164)
-
-            Case "Bnt_Siguente3"
-
-                Ciego.Location = New Point(480, 164)
-
-            Case "Bnt_Siguente4"
-                Ciego.Location = New Point(682, 164)
-        End Select
+            MessageBox.Show("No hay clientes en la fila")
+        End If
+        
 
     End Sub
-
-
 
     Private Sub Bnt_PararTrabajo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Bnt_PararTrabajo1.Click, Bnt_PararTrabajo4.Click, Bnt_PararTrabajo2.Click, Bnt_PararTrabajo3.Click
         Dim datosCajero As New OBJETOS.ObjCajero
@@ -110,9 +140,8 @@ Public Class Frm_FilaClientes
     End Sub
 
     Private Sub btn_RefrescarFila_Click(sender As System.Object, e As System.EventArgs) Handles btn_RefrescarFila.Click
-        Dim datosFila As New ObjFilaCliente
-        ejecutar2.RefrescarFilaClientes(datosFila)
-        MessageBox.Show("Procedimiento ejecutado Correctamente ")
+
+        Lb_Contador.Text = ejecutar2.ClientesEnFila()
     End Sub
 
     Private Sub Bnt_Menu_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Menu.Click
@@ -120,5 +149,12 @@ Public Class Frm_FilaClientes
         Dim MenuPrincipal As New Frm_Menu
         MenuPrincipal.ShowDialog()
 
+    End Sub
+
+    Private Sub Bnt_IngresarFila_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_IngresarFila.Click
+        Dim Resultado As String
+
+        Resultado = ejecutar2.IngresarEnFila("4-321-5687")
+        MessageBox.Show(Resultado)
     End Sub
 End Class

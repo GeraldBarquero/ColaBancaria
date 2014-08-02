@@ -25,9 +25,26 @@ Public Class BllCliente
         ejecutar.insertarCliente(datosCliente)
     End Sub
 
-    Public Sub RefrescarFilaClientes(ByVal datosFila As OBJETOS.ObjFilaCliente)
-        ejecutar.RefrescarFila(datosFila)
-    End Sub
+    Public Function SiguienteEnFila()
+        Dim valores As New Collection
+        valores = ejecutar.SiguienteEnFila()
+
+        Return valores
+    End Function
+
+    Public Function ClientesEnFila()
+        Dim vCantidad As String
+        vCantidad = ejecutar.ClientesEnFila()
+
+        Return vCantidad
+    End Function
+
+    Public Function IngresarEnFila(ByVal cedula) As String
+        Dim vResultado As String
+        vResultado = ejecutar.IngresarEnFila(cedula)
+
+        Return vResultado
+    End Function
 
 
 End Class

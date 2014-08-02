@@ -82,25 +82,94 @@ Namespace MetodosCliente
             End Try
         End Sub
 
-        Public Sub RefrescarFila(ByRef objFilacliente As OBJETOS.ObjFilaCliente)
+        Public Function SiguienteEnFila() As Collection
+            Dim valores As New Collection
+            Dim Id_Cliente As String
+            Dim Nombre_Cliente As String
+            Dim Prioridad As String
+            Id_Cliente = String.Empty
+            Nombre_Cliente = String.Empty
+            Prioridad = String.Empty
+            Dim Param As OracleParameter
             Try
                 Dim conn As New ConeccionOracle.ConeccionOracle()
                 If conn.connection.State = ConnectionState.Closed Then
                     conn.connection.Open()
                 End If
-                conn.cmd = New OracleCommand("SIGUIENTE_FILA", conn.connection)
+                conn.cmd = New OracleCommand("SIGUIENTE_EN_FILA", conn.connection)
                 conn.cmd.CommandType = CommandType.StoredProcedure
-                conn.cmd.Parameters.Add("Pid_Fila_Cliente", OracleDbType.Int32, ParameterDirection.Output)
+                
+                conn.cmd.Parameters.Add("PId_Cliente", OracleDbType.Int32, ParameterDirection.Output)
+                conn.cmd.Parameters.Add("PPrioridad", OracleDbType.Int32, ParameterDirection.Output)
+                Param = conn.cmd.Parameters.Add("PNombre_Cliente", OracleDbType.Varchar2, ParameterDirection.Output)
+                Param.Size = 200
                 conn.cmd.ExecuteNonQuery()
-                MessageBox.Show("Se esta atendiendo al cliente: " & conn.cmd.Parameters("Pid_Fila_Cliente").Value.ToString)
 
+                Nombre_Cliente = conn.cmd.Parameters("PNombre_Cliente").Value.ToString
+                Id_Cliente = conn.cmd.Parameters("PId_Cliente").Value.ToString
+                Prioridad = conn.cmd.Parameters("PPrioridad").Value.ToString
+                conn.cmd.Dispose()
+                conn.connection.Close()
+
+            Catch ex As Exception
+                MessageBox.Show("Error: " + ex.Message, "Error al consultar el cliente que sigue en la fila", MessageBoxButtons.OK, MessageBoxIcon.[Error])
+            End Try
+            valores.Add(Id_Cliente, "Id_Cliente")
+            valores.Add(Nombre_Cliente, "Nombre_Cliente")
+            valores.Add(Prioridad, "Prioridad")
+            Return valores
+
+        End Function
+
+        Public Function ClientesEnFila() As String
+            Dim Cantidad_Clientes As String
+            Cantidad_Clientes = String.Empty
+            Try
+                Dim conn As New ConeccionOracle.ConeccionOracle()
+                If conn.connection.State = ConnectionState.Closed Then
+                    conn.connection.Open()
+                End If
+                conn.cmd = New OracleCommand("CLIENTES_EN_FILA", conn.connection)
+                conn.cmd.CommandType = CommandType.StoredProcedure
+                conn.cmd.Parameters.Add("PCantidad_Clientes", OracleDbType.Int32, ParameterDirection.Output)
+                conn.cmd.ExecuteNonQuery()
+
+                Cantidad_Clientes = conn.cmd.Parameters("PCantidad_Clientes").Value.ToString
 
                 conn.cmd.Dispose()
                 conn.connection.Close()
 
             Catch ex As Exception
-                MessageBox.Show("Error: " + ex.Message, "Error al insertar Cliente", MessageBoxButtons.OK, MessageBoxIcon.[Error])
+                MessageBox.Show("Error: " + ex.Message, "Error al consultar la cantidad Clientes", MessageBoxButtons.OK, MessageBoxIcon.[Error])
             End Try
-        End Sub
+            Return Cantidad_Clientes
+
+        End Function
+
+        Public Function IngresarEnFila(ByVal cedula As String) As String
+            Dim resultado As String
+            Dim Param As OracleParameter
+            Try
+                Dim conn As New ConeccionOracle.ConeccionOracle()
+                If conn.connection.State = ConnectionState.Closed Then
+                    conn.connection.Open()
+                End If
+                conn.cmd = New OracleCommand("VALIDAR_CLIENTE", conn.connection)
+                conn.cmd.CommandType = CommandType.StoredProcedure
+                Param = conn.cmd.Parameters.Add("PCEDULA", OracleDbType.Varchar2, cedula, ParameterDirection.Input)
+                Param.Size = 200
+                conn.cmd.Parameters.Add("PResultado", OracleDbType.Int32, ParameterDirection.ReturnValue)
+                conn.cmd.ExecuteNonQuery()
+                resultado = conn.cmd.Parameters("PResultado").Value.ToString
+
+                conn.cmd.Dispose()
+                conn.connection.Close()
+
+            Catch ex As Exception
+                MessageBox.Show("Error: " + ex.Message, "Error al consultar la cantidad Clientes", MessageBoxButtons.OK, MessageBoxIcon.[Error])
+            End Try
+
+            Return resultado
+        End Function
     End Class
 End Namespace

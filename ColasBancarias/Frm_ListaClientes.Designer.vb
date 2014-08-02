@@ -29,17 +29,23 @@ Partial Class Frm_ListaClientes
         '
         'Dgv_ListaClientes
         '
+        Me.Dgv_ListaClientes.AllowUserToAddRows = False
+        Me.Dgv_ListaClientes.AllowUserToDeleteRows = False
         Me.Dgv_ListaClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.Dgv_ListaClientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.Dgv_ListaClientes.BackgroundColor = System.Drawing.Color.White
+        Me.Dgv_ListaClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Dgv_ListaClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Dgv_ListaClientes.Location = New System.Drawing.Point(12, 22)
+        Me.Dgv_ListaClientes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Dgv_ListaClientes.Location = New System.Drawing.Point(0, 0)
         Me.Dgv_ListaClientes.Name = "Dgv_ListaClientes"
-        Me.Dgv_ListaClientes.Size = New System.Drawing.Size(622, 212)
+        Me.Dgv_ListaClientes.ReadOnly = True
+        Me.Dgv_ListaClientes.Size = New System.Drawing.Size(768, 246)
         Me.Dgv_ListaClientes.TabIndex = 0
         '
         'Bt_RegistrarCliente
         '
-        Me.Bt_RegistrarCliente.Location = New System.Drawing.Point(531, 251)
+        Me.Bt_RegistrarCliente.Location = New System.Drawing.Point(627, 221)
         Me.Bt_RegistrarCliente.Name = "Bt_RegistrarCliente"
         Me.Bt_RegistrarCliente.Size = New System.Drawing.Size(103, 23)
         Me.Bt_RegistrarCliente.TabIndex = 1
@@ -48,9 +54,10 @@ Partial Class Frm_ListaClientes
         '
         'Frm_ListaClientes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(652, 286)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
+        Me.AutoScroll = True
+        Me.AutoSize = True
+        Me.ClientSize = New System.Drawing.Size(768, 246)
         Me.Controls.Add(Me.Bt_RegistrarCliente)
         Me.Controls.Add(Me.Dgv_ListaClientes)
         Me.Name = "Frm_ListaClientes"
