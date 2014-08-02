@@ -4,14 +4,14 @@ Imports ColasBancarias.BLL
 Imports ColasBancarias.Entidades.OBJETOS
 
 Public Class Frm_FilaClientes
-<<<<<<< HEAD
+
     Dim ejecutarCajero As New BllCajero
     Dim ejecutarFilaCliente As New BllFilaCliente
-=======
+
     Dim ejecutar As New BllCajero
     Dim ejecutar2 As New BllCliente
     Dim idCajero As Integer
->>>>>>> fe3614836d688a6b3227afbf574e5e6c861f4caf
+
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.KeyPreview = True
@@ -111,7 +111,7 @@ Public Class Frm_FilaClientes
 
                 Case "Bnt_PararTrabajo1"
                     datosCajero.id_cajero = 41
-<<<<<<< HEAD
+
                     ejecutarCajero.AlmuerzoCafeOtros(datosCajero, accion)
                     Bnt_Siguente1.Enabled = False
                     Bnt_PararTrabajo1.Enabled = False
@@ -134,7 +134,7 @@ Public Class Frm_FilaClientes
                     Bnt_Siguente4.Enabled = False
                     Bnt_PararTrabajo4.Enabled = False
                     Bnt_Trabajar4.Enabled = True
-=======
+
                     ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
 
                 Case "Bnt_PararTrabajo2"
@@ -149,7 +149,6 @@ Public Class Frm_FilaClientes
                     datosCajero.id_cajero = 23
                     ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
 
->>>>>>> fe3614836d688a6b3227afbf574e5e6c861f4caf
             End Select
 
             idCajero = datosCajero.id_cajero
@@ -214,11 +213,10 @@ Public Class Frm_FilaClientes
         ValidarCliente.ShowDialog()
     End Sub
 
-<<<<<<< HEAD
     Private Sub Bnt_Transaccion1_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Transaccion1.Click
 
     End Sub
-=======
+
     Private Sub Bnt_Transaccion_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Transaccion1.Click, Bnt_Transaccion2.Click, Bnt_Transaccion3.Click, Bnt_Transaccion4.Click
         Dim TransaccionCliente As New Frm_RegistroTransaccion
 
@@ -242,6 +240,5 @@ Public Class Frm_FilaClientes
         TransaccionCliente.ShowDialog()
     End Sub
 
-    
->>>>>>> fe3614836d688a6b3227afbf574e5e6c861f4caf
+
 End Class
