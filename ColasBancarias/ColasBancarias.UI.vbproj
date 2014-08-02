@@ -123,6 +123,12 @@
     <Compile Include="Frm_RegistroCajero.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Frm_RegistroTransaccion.Designer.vb">
+      <DependentUpon>Frm_RegistroTransaccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_RegistroTransaccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Frm_ValidarCliente.Designer.vb">
       <DependentUpon>Frm_ValidarCliente.vb</DependentUpon>
     </Compile>
@@ -168,6 +174,9 @@
     <EmbeddedResource Include="Frm_RegistroCajero.resx">
       <DependentUpon>Frm_RegistroCajero.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_RegistroTransaccion.resx">
+      <DependentUpon>Frm_RegistroTransaccion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_ValidarCliente.resx">
       <DependentUpon>Frm_ValidarCliente.vb</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +209,7 @@
     <None Include="Resources\Cajero.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Upload.png" />
     <None Include="Resources\AddCliente.png" />
     <None Include="Resources\AddEmpleados.png" />
     <Content Include="Resources\anciano.PNG" />
