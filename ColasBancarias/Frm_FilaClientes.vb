@@ -6,6 +6,7 @@ Imports ColasBancarias.Entidades.OBJETOS
 Public Class Frm_FilaClientes
     Dim ejecutar As New BllCajero
     Dim ejecutar2 As New BllCliente
+    Dim idCajero As Integer
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.KeyPreview = True
@@ -88,7 +89,7 @@ Public Class Frm_FilaClientes
     Private Sub Bnt_PararTrabajo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Bnt_PararTrabajo1.Click, Bnt_PararTrabajo4.Click, Bnt_PararTrabajo2.Click, Bnt_PararTrabajo3.Click
         Dim datosCajero As New ObjCajero
         Dim accion As String
-        Dim idCajero As Integer
+        ''Dim idCajero As Integer
         Try
             accion = "SALIDA"
             Select Case sender.Name()
@@ -96,15 +97,19 @@ Public Class Frm_FilaClientes
                 Case "Bnt_PararTrabajo1"
                     datosCajero.id_cajero = 41
                     ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
+
                 Case "Bnt_PararTrabajo2"
                     datosCajero.id_cajero = 21
                     ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
+
                 Case "Bnt_PararTrabajo3"
                     datosCajero.id_cajero = 22
                     ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
+
                 Case "Bnt_PararTrabajo4"
                     datosCajero.id_cajero = 23
                     ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
+
             End Select
             idCajero = datosCajero.id_cajero
             MessageBox.Show("El cajero número : " & idCajero & " salio a almorzar.")
@@ -118,7 +123,7 @@ Public Class Frm_FilaClientes
     Private Sub Bnt_Trabajar_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Trabajar1.Click, Bnt_Trabajar2.Click, Bnt_Trabajar3.Click, Bnt_Trabajar4.Click
         Dim datosCajero As New ObjCajero
         Dim accion As String
-        Dim idCajero As Integer
+        ''  Dim idCajero As Integer
         Try
             accion = "ENTRADA"
             Select Case sender.Name()
@@ -155,4 +160,29 @@ Public Class Frm_FilaClientes
         Dim ValidarCliente As New Frm_ValidarCliente
         ValidarCliente.ShowDialog()
     End Sub
+
+    Private Sub Bnt_Transaccion_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Transaccion1.Click, Bnt_Transaccion2.Click, Bnt_Transaccion3.Click, Bnt_Transaccion4.Click
+        Dim TransaccionCliente As New Frm_RegistroTransaccion
+
+
+        Select Case sender.Name()
+
+            Case "Bnt_Transaccion1"
+                TransaccionCliente.idCajero = 41
+                TransaccionCliente.nombreCliente = Txt_NombreCliente1.Text
+            Case "Bnt_Transaccion2"
+                TransaccionCliente.idCajero = 21
+                TransaccionCliente.nombreCliente = Txt_NombreCliente2.Text
+            Case "Bnt_Transaccion3"
+                TransaccionCliente.idCajero = 22
+                TransaccionCliente.nombreCliente = Txt_NombreCliente3.Text
+            Case "Bnt_Transaccion4"
+                TransaccionCliente.idCajero = 23
+                TransaccionCliente.nombreCliente = Txt_NombreCliente4.Text
+
+        End Select
+        TransaccionCliente.ShowDialog()
+    End Sub
+
+    
 End Class

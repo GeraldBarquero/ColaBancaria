@@ -31,6 +31,11 @@ Partial Class Frm_FilaClientes
         Me.Lb_NombreCliente3 = New System.Windows.Forms.Label()
         Me.Txt_NombreCliente4 = New System.Windows.Forms.TextBox()
         Me.Lb_NombreCliente4 = New System.Windows.Forms.Label()
+        Me.Bnt_IngresarFila = New System.Windows.Forms.Button()
+        Me.Bnt_Transaccion2 = New System.Windows.Forms.Button()
+        Me.Bnt_Transaccion3 = New System.Windows.Forms.Button()
+        Me.Bnt_Transaccion4 = New System.Windows.Forms.Button()
+        Me.Bnt_Transaccion1 = New System.Windows.Forms.Button()
         Me.Bnt_Menu = New System.Windows.Forms.Button()
         Me.btn_RefrescarFila = New System.Windows.Forms.Button()
         Me.Bnt_PararTrabajo4 = New System.Windows.Forms.Button()
@@ -54,11 +59,6 @@ Partial Class Frm_FilaClientes
         Me.Cliente4 = New System.Windows.Forms.PictureBox()
         Me.Cliente3 = New System.Windows.Forms.PictureBox()
         Me.Cliente2 = New System.Windows.Forms.PictureBox()
-        Me.Bnt_IngresarFila = New System.Windows.Forms.Button()
-        Me.Bnt_Transaccion1 = New System.Windows.Forms.Button()
-        Me.Bnt_Transaccion2 = New System.Windows.Forms.Button()
-        Me.Bnt_Transaccion3 = New System.Windows.Forms.Button()
-        Me.Bnt_Transaccion4 = New System.Windows.Forms.Button()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -77,7 +77,7 @@ Partial Class Frm_FilaClientes
         Me.Lb_Contador.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Lb_Contador.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Lb_Contador.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_Contador.Location = New System.Drawing.Point(432, 302)
+        Me.Lb_Contador.Location = New System.Drawing.Point(432, 342)
         Me.Lb_Contador.Name = "Lb_Contador"
         Me.Lb_Contador.Size = New System.Drawing.Size(22, 24)
         Me.Lb_Contador.TabIndex = 24
@@ -153,6 +153,51 @@ Partial Class Frm_FilaClientes
         Me.Lb_NombreCliente4.Size = New System.Drawing.Size(42, 13)
         Me.Lb_NombreCliente4.TabIndex = 34
         Me.Lb_NombreCliente4.Text = "Cliente:"
+        '
+        'Bnt_IngresarFila
+        '
+        Me.Bnt_IngresarFila.Location = New System.Drawing.Point(30, 325)
+        Me.Bnt_IngresarFila.Name = "Bnt_IngresarFila"
+        Me.Bnt_IngresarFila.Size = New System.Drawing.Size(75, 23)
+        Me.Bnt_IngresarFila.TabIndex = 36
+        Me.Bnt_IngresarFila.Text = "Button1"
+        Me.Bnt_IngresarFila.UseVisualStyleBackColor = True
+        '
+        'Bnt_Transaccion2
+        '
+        Me.Bnt_Transaccion2.Image = Global.ColasBancarias.UI.My.Resources.Resources.Upload
+        Me.Bnt_Transaccion2.Location = New System.Drawing.Point(299, 245)
+        Me.Bnt_Transaccion2.Name = "Bnt_Transaccion2"
+        Me.Bnt_Transaccion2.Size = New System.Drawing.Size(40, 38)
+        Me.Bnt_Transaccion2.TabIndex = 38
+        Me.Bnt_Transaccion2.UseVisualStyleBackColor = True
+        '
+        'Bnt_Transaccion3
+        '
+        Me.Bnt_Transaccion3.Image = Global.ColasBancarias.UI.My.Resources.Resources.Upload
+        Me.Bnt_Transaccion3.Location = New System.Drawing.Point(499, 245)
+        Me.Bnt_Transaccion3.Name = "Bnt_Transaccion3"
+        Me.Bnt_Transaccion3.Size = New System.Drawing.Size(39, 38)
+        Me.Bnt_Transaccion3.TabIndex = 39
+        Me.Bnt_Transaccion3.UseVisualStyleBackColor = True
+        '
+        'Bnt_Transaccion4
+        '
+        Me.Bnt_Transaccion4.Image = Global.ColasBancarias.UI.My.Resources.Resources.Upload
+        Me.Bnt_Transaccion4.Location = New System.Drawing.Point(695, 245)
+        Me.Bnt_Transaccion4.Name = "Bnt_Transaccion4"
+        Me.Bnt_Transaccion4.Size = New System.Drawing.Size(43, 38)
+        Me.Bnt_Transaccion4.TabIndex = 40
+        Me.Bnt_Transaccion4.UseVisualStyleBackColor = True
+        '
+        'Bnt_Transaccion1
+        '
+        Me.Bnt_Transaccion1.Image = Global.ColasBancarias.UI.My.Resources.Resources.Upload
+        Me.Bnt_Transaccion1.Location = New System.Drawing.Point(97, 245)
+        Me.Bnt_Transaccion1.Name = "Bnt_Transaccion1"
+        Me.Bnt_Transaccion1.Size = New System.Drawing.Size(41, 39)
+        Me.Bnt_Transaccion1.TabIndex = 37
+        Me.Bnt_Transaccion1.UseVisualStyleBackColor = True
         '
         'Bnt_Menu
         '
@@ -418,7 +463,7 @@ Partial Class Frm_FilaClientes
         Me.PrimerCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PrimerCliente.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PrimerCliente.Image = Global.ColasBancarias.UI.My.Resources.Resources.ciego
-        Me.PrimerCliente.Location = New System.Drawing.Point(374, 287)
+        Me.PrimerCliente.Location = New System.Drawing.Point(365, 325)
         Me.PrimerCliente.Name = "PrimerCliente"
         Me.PrimerCliente.Size = New System.Drawing.Size(43, 56)
         Me.PrimerCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -472,51 +517,6 @@ Partial Class Frm_FilaClientes
         Me.Cliente2.TabIndex = 25
         Me.Cliente2.TabStop = False
         Me.Cliente2.Visible = False
-        '
-        'Bnt_IngresarFila
-        '
-        Me.Bnt_IngresarFila.Location = New System.Drawing.Point(30, 325)
-        Me.Bnt_IngresarFila.Name = "Bnt_IngresarFila"
-        Me.Bnt_IngresarFila.Size = New System.Drawing.Size(75, 23)
-        Me.Bnt_IngresarFila.TabIndex = 36
-        Me.Bnt_IngresarFila.Text = "Button1"
-        Me.Bnt_IngresarFila.UseVisualStyleBackColor = True
-        '
-        'Bnt_Transaccion1
-        '
-        Me.Bnt_Transaccion1.Location = New System.Drawing.Point(86, 246)
-        Me.Bnt_Transaccion1.Name = "Bnt_Transaccion1"
-        Me.Bnt_Transaccion1.Size = New System.Drawing.Size(75, 23)
-        Me.Bnt_Transaccion1.TabIndex = 37
-        Me.Bnt_Transaccion1.Text = "Button1"
-        Me.Bnt_Transaccion1.UseVisualStyleBackColor = True
-        '
-        'Bnt_Transaccion2
-        '
-        Me.Bnt_Transaccion2.Location = New System.Drawing.Point(287, 246)
-        Me.Bnt_Transaccion2.Name = "Bnt_Transaccion2"
-        Me.Bnt_Transaccion2.Size = New System.Drawing.Size(75, 23)
-        Me.Bnt_Transaccion2.TabIndex = 38
-        Me.Bnt_Transaccion2.Text = "Button2"
-        Me.Bnt_Transaccion2.UseVisualStyleBackColor = True
-        '
-        'Bnt_Transaccion3
-        '
-        Me.Bnt_Transaccion3.Location = New System.Drawing.Point(486, 246)
-        Me.Bnt_Transaccion3.Name = "Bnt_Transaccion3"
-        Me.Bnt_Transaccion3.Size = New System.Drawing.Size(75, 23)
-        Me.Bnt_Transaccion3.TabIndex = 39
-        Me.Bnt_Transaccion3.Text = "Button3"
-        Me.Bnt_Transaccion3.UseVisualStyleBackColor = True
-        '
-        'Bnt_Transaccion4
-        '
-        Me.Bnt_Transaccion4.Location = New System.Drawing.Point(686, 246)
-        Me.Bnt_Transaccion4.Name = "Bnt_Transaccion4"
-        Me.Bnt_Transaccion4.Size = New System.Drawing.Size(75, 23)
-        Me.Bnt_Transaccion4.TabIndex = 40
-        Me.Bnt_Transaccion4.Text = "Button4"
-        Me.Bnt_Transaccion4.UseVisualStyleBackColor = True
         '
         'Frm_FilaClientes
         '

@@ -2,7 +2,6 @@
 Imports ColasBancarias.Entidades
 
 Public Class BllCajero
-    Dim objeto As Integer
     Dim ejecutar As New MetodosCajero
 
     Public Function listaCajero()

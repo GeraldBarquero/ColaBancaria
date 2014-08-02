@@ -75,6 +75,7 @@
     <Compile Include="ConeccionOracle.vb" />
     <Compile Include="MetodosCajero.vb" />
     <Compile Include="MetodosCliente.vb" />
+    <Compile Include="MetodosTransaccion.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
