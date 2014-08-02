@@ -144,7 +144,7 @@ Partial Class Frm_RegistroCliente
         'Cmb_SexoCliente
         '
         Me.Cmb_SexoCliente.FormattingEnabled = True
-        Me.Cmb_SexoCliente.Items.AddRange(New Object() {"Hombre", "Mujer", "Otro"})
+        Me.Cmb_SexoCliente.Items.AddRange(New Object() {"Hombre", "Mujer"})
         Me.Cmb_SexoCliente.Location = New System.Drawing.Point(130, 143)
         Me.Cmb_SexoCliente.Name = "Cmb_SexoCliente"
         Me.Cmb_SexoCliente.Size = New System.Drawing.Size(121, 21)

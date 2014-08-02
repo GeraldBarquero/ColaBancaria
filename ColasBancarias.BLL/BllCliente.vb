@@ -39,12 +39,16 @@ Public Class BllCliente
         Return vCantidad
     End Function
 
-    Public Function IngresarEnFila(ByVal cedula) As String
+    Public Function Validarcliente(ByVal cedula) As String
         Dim vResultado As String
-        vResultado = ejecutar.IngresarEnFila(cedula)
+        vResultado = ejecutar.ValidarCliente(cedula)
 
         Return vResultado
     End Function
+
+    Public Sub IngresarEnFila(ByVal cedula)
+        ejecutar.IngresarEnFila(cedula)
+    End Sub
 
 
 End Class

@@ -117,6 +117,12 @@
     <Compile Include="Frm_RegistroCajero.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Frm_ValidarCliente.Designer.vb">
+      <DependentUpon>Frm_ValidarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ValidarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_RegistroCajero.resx">
       <DependentUpon>Frm_RegistroCajero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ValidarCliente.resx">
+      <DependentUpon>Frm_ValidarCliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>

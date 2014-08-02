@@ -55,6 +55,10 @@ Partial Class Frm_FilaClientes
         Me.Cliente3 = New System.Windows.Forms.PictureBox()
         Me.Cliente2 = New System.Windows.Forms.PictureBox()
         Me.Bnt_IngresarFila = New System.Windows.Forms.Button()
+        Me.Bnt_Transaccion1 = New System.Windows.Forms.Button()
+        Me.Bnt_Transaccion2 = New System.Windows.Forms.Button()
+        Me.Bnt_Transaccion3 = New System.Windows.Forms.Button()
+        Me.Bnt_Transaccion4 = New System.Windows.Forms.Button()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -73,7 +77,7 @@ Partial Class Frm_FilaClientes
         Me.Lb_Contador.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Lb_Contador.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Lb_Contador.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_Contador.Location = New System.Drawing.Point(396, 293)
+        Me.Lb_Contador.Location = New System.Drawing.Point(432, 302)
         Me.Lb_Contador.Name = "Lb_Contador"
         Me.Lb_Contador.Size = New System.Drawing.Size(22, 24)
         Me.Lb_Contador.TabIndex = 24
@@ -414,9 +418,9 @@ Partial Class Frm_FilaClientes
         Me.PrimerCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PrimerCliente.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PrimerCliente.Image = Global.ColasBancarias.UI.My.Resources.Resources.ciego
-        Me.PrimerCliente.Location = New System.Drawing.Point(338, 284)
+        Me.PrimerCliente.Location = New System.Drawing.Point(374, 287)
         Me.PrimerCliente.Name = "PrimerCliente"
-        Me.PrimerCliente.Size = New System.Drawing.Size(54, 64)
+        Me.PrimerCliente.Size = New System.Drawing.Size(43, 56)
         Me.PrimerCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PrimerCliente.TabIndex = 20
         Me.PrimerCliente.TabStop = False
@@ -425,9 +429,10 @@ Partial Class Frm_FilaClientes
         '
         Me.Cliente1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Cliente1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Cliente1.Location = New System.Drawing.Point(338, 284)
+        Me.Cliente1.Location = New System.Drawing.Point(86, 163)
         Me.Cliente1.Name = "Cliente1"
         Me.Cliente1.Size = New System.Drawing.Size(52, 50)
+        Me.Cliente1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Cliente1.TabIndex = 23
         Me.Cliente1.TabStop = False
         Me.Cliente1.Visible = False
@@ -436,9 +441,10 @@ Partial Class Frm_FilaClientes
         '
         Me.Cliente4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Cliente4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Cliente4.Location = New System.Drawing.Point(338, 284)
+        Me.Cliente4.Location = New System.Drawing.Point(686, 163)
         Me.Cliente4.Name = "Cliente4"
         Me.Cliente4.Size = New System.Drawing.Size(52, 50)
+        Me.Cliente4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Cliente4.TabIndex = 27
         Me.Cliente4.TabStop = False
         Me.Cliente4.Visible = False
@@ -447,9 +453,10 @@ Partial Class Frm_FilaClientes
         '
         Me.Cliente3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Cliente3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Cliente3.Location = New System.Drawing.Point(338, 284)
+        Me.Cliente3.Location = New System.Drawing.Point(486, 163)
         Me.Cliente3.Name = "Cliente3"
         Me.Cliente3.Size = New System.Drawing.Size(52, 50)
+        Me.Cliente3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Cliente3.TabIndex = 26
         Me.Cliente3.TabStop = False
         Me.Cliente3.Visible = False
@@ -458,9 +465,10 @@ Partial Class Frm_FilaClientes
         '
         Me.Cliente2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Cliente2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Cliente2.Location = New System.Drawing.Point(338, 284)
+        Me.Cliente2.Location = New System.Drawing.Point(287, 163)
         Me.Cliente2.Name = "Cliente2"
         Me.Cliente2.Size = New System.Drawing.Size(52, 50)
+        Me.Cliente2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Cliente2.TabIndex = 25
         Me.Cliente2.TabStop = False
         Me.Cliente2.Visible = False
@@ -474,11 +482,51 @@ Partial Class Frm_FilaClientes
         Me.Bnt_IngresarFila.Text = "Button1"
         Me.Bnt_IngresarFila.UseVisualStyleBackColor = True
         '
+        'Bnt_Transaccion1
+        '
+        Me.Bnt_Transaccion1.Location = New System.Drawing.Point(86, 246)
+        Me.Bnt_Transaccion1.Name = "Bnt_Transaccion1"
+        Me.Bnt_Transaccion1.Size = New System.Drawing.Size(75, 23)
+        Me.Bnt_Transaccion1.TabIndex = 37
+        Me.Bnt_Transaccion1.Text = "Button1"
+        Me.Bnt_Transaccion1.UseVisualStyleBackColor = True
+        '
+        'Bnt_Transaccion2
+        '
+        Me.Bnt_Transaccion2.Location = New System.Drawing.Point(287, 246)
+        Me.Bnt_Transaccion2.Name = "Bnt_Transaccion2"
+        Me.Bnt_Transaccion2.Size = New System.Drawing.Size(75, 23)
+        Me.Bnt_Transaccion2.TabIndex = 38
+        Me.Bnt_Transaccion2.Text = "Button2"
+        Me.Bnt_Transaccion2.UseVisualStyleBackColor = True
+        '
+        'Bnt_Transaccion3
+        '
+        Me.Bnt_Transaccion3.Location = New System.Drawing.Point(486, 246)
+        Me.Bnt_Transaccion3.Name = "Bnt_Transaccion3"
+        Me.Bnt_Transaccion3.Size = New System.Drawing.Size(75, 23)
+        Me.Bnt_Transaccion3.TabIndex = 39
+        Me.Bnt_Transaccion3.Text = "Button3"
+        Me.Bnt_Transaccion3.UseVisualStyleBackColor = True
+        '
+        'Bnt_Transaccion4
+        '
+        Me.Bnt_Transaccion4.Location = New System.Drawing.Point(686, 246)
+        Me.Bnt_Transaccion4.Name = "Bnt_Transaccion4"
+        Me.Bnt_Transaccion4.Size = New System.Drawing.Size(75, 23)
+        Me.Bnt_Transaccion4.TabIndex = 40
+        Me.Bnt_Transaccion4.Text = "Button4"
+        Me.Bnt_Transaccion4.UseVisualStyleBackColor = True
+        '
         'Frm_FilaClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(821, 408)
+        Me.Controls.Add(Me.Bnt_Transaccion4)
+        Me.Controls.Add(Me.Bnt_Transaccion3)
+        Me.Controls.Add(Me.Bnt_Transaccion2)
+        Me.Controls.Add(Me.Bnt_Transaccion1)
         Me.Controls.Add(Me.Bnt_IngresarFila)
         Me.Controls.Add(Me.Txt_NombreCliente4)
         Me.Controls.Add(Me.Lb_NombreCliente4)
@@ -561,4 +609,8 @@ Partial Class Frm_FilaClientes
     Friend WithEvents Txt_NombreCliente4 As System.Windows.Forms.TextBox
     Friend WithEvents Lb_NombreCliente4 As System.Windows.Forms.Label
     Friend WithEvents Bnt_IngresarFila As System.Windows.Forms.Button
+    Friend WithEvents Bnt_Transaccion1 As System.Windows.Forms.Button
+    Friend WithEvents Bnt_Transaccion2 As System.Windows.Forms.Button
+    Friend WithEvents Bnt_Transaccion3 As System.Windows.Forms.Button
+    Friend WithEvents Bnt_Transaccion4 As System.Windows.Forms.Button
 End Class
