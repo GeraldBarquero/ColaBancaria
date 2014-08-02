@@ -12,4 +12,8 @@ Public Class Frm_ConsultarCliente
         End If
         DataGridView1.DataSource = ejecutar.consultarCliente(objeto)
     End Sub
+
+    Private Sub Frm_ConsultarCliente_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

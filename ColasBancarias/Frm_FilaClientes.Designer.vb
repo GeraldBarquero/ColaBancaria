@@ -22,6 +22,7 @@ Partial Class Frm_FilaClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_FilaClientes))
         Me.Lb_Contador = New System.Windows.Forms.Label()
         Me.Lb_NombreCliente1 = New System.Windows.Forms.Label()
         Me.Txt_NombreCliente1 = New System.Windows.Forms.TextBox()
@@ -32,21 +33,21 @@ Partial Class Frm_FilaClientes
         Me.Txt_NombreCliente4 = New System.Windows.Forms.TextBox()
         Me.Lb_NombreCliente4 = New System.Windows.Forms.Label()
         Me.Bnt_IngresarFila = New System.Windows.Forms.Button()
-        Me.Bnt_Transaccion2 = New System.Windows.Forms.Button()
-        Me.Bnt_Transaccion3 = New System.Windows.Forms.Button()
+        Me.Bnt_PararTrabajo4 = New System.Windows.Forms.Button()
+        Me.Bnt_PararTrabajo3 = New System.Windows.Forms.Button()
+        Me.Bnt_PararTrabajo2 = New System.Windows.Forms.Button()
         Me.Bnt_Transaccion4 = New System.Windows.Forms.Button()
+        Me.Bnt_Transaccion3 = New System.Windows.Forms.Button()
+        Me.Bnt_Transaccion2 = New System.Windows.Forms.Button()
         Me.Bnt_Transaccion1 = New System.Windows.Forms.Button()
         Me.Bnt_Menu = New System.Windows.Forms.Button()
         Me.btn_RefrescarFila = New System.Windows.Forms.Button()
-        Me.Bnt_PararTrabajo4 = New System.Windows.Forms.Button()
         Me.Bnt_Siguente4 = New System.Windows.Forms.Button()
         Me.Bnt_Trabajar4 = New System.Windows.Forms.Button()
-        Me.Bnt_PararTrabajo3 = New System.Windows.Forms.Button()
         Me.Bnt_Siguente3 = New System.Windows.Forms.Button()
         Me.Bnt_Trabajar3 = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Bnt_PararTrabajo2 = New System.Windows.Forms.Button()
         Me.Bnt_Siguente2 = New System.Windows.Forms.Button()
         Me.Bnt_Trabajar2 = New System.Windows.Forms.Button()
         Me.Bnt_PararTrabajo1 = New System.Windows.Forms.Button()
@@ -163,36 +164,82 @@ Partial Class Frm_FilaClientes
         Me.Bnt_IngresarFila.Text = "Button1"
         Me.Bnt_IngresarFila.UseVisualStyleBackColor = True
         '
-        'Bnt_Transaccion2
+        'Bnt_PararTrabajo4
         '
-        Me.Bnt_Transaccion2.Image = Global.ColasBancarias.UI.My.Resources.Resources.Upload
-        Me.Bnt_Transaccion2.Location = New System.Drawing.Point(299, 245)
-        Me.Bnt_Transaccion2.Name = "Bnt_Transaccion2"
-        Me.Bnt_Transaccion2.Size = New System.Drawing.Size(40, 38)
-        Me.Bnt_Transaccion2.TabIndex = 38
-        Me.Bnt_Transaccion2.UseVisualStyleBackColor = True
+        Me.Bnt_PararTrabajo4.BackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_PararTrabajo4.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo4.FlatAppearance.BorderSize = 0
+        Me.Bnt_PararTrabajo4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Bnt_PararTrabajo4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Bnt_PararTrabajo4.Image = Global.ColasBancarias.UI.My.Resources.Resources.StopDesactivado
+        Me.Bnt_PararTrabajo4.Location = New System.Drawing.Point(610, 67)
+        Me.Bnt_PararTrabajo4.Name = "Bnt_PararTrabajo4"
+        Me.Bnt_PararTrabajo4.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_PararTrabajo4.TabIndex = 19
+        Me.Bnt_PararTrabajo4.UseVisualStyleBackColor = False
         '
-        'Bnt_Transaccion3
+        'Bnt_PararTrabajo3
         '
-        Me.Bnt_Transaccion3.Image = Global.ColasBancarias.UI.My.Resources.Resources.Upload
-        Me.Bnt_Transaccion3.Location = New System.Drawing.Point(499, 245)
-        Me.Bnt_Transaccion3.Name = "Bnt_Transaccion3"
-        Me.Bnt_Transaccion3.Size = New System.Drawing.Size(39, 38)
-        Me.Bnt_Transaccion3.TabIndex = 39
-        Me.Bnt_Transaccion3.UseVisualStyleBackColor = True
+        Me.Bnt_PararTrabajo3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_PararTrabajo3.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo3.FlatAppearance.BorderSize = 0
+        Me.Bnt_PararTrabajo3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Bnt_PararTrabajo3.Image = Global.ColasBancarias.UI.My.Resources.Resources.StopDesactivado
+        Me.Bnt_PararTrabajo3.Location = New System.Drawing.Point(408, 67)
+        Me.Bnt_PararTrabajo3.Name = "Bnt_PararTrabajo3"
+        Me.Bnt_PararTrabajo3.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_PararTrabajo3.TabIndex = 16
+        Me.Bnt_PararTrabajo3.UseVisualStyleBackColor = True
+        '
+        'Bnt_PararTrabajo2
+        '
+        Me.Bnt_PararTrabajo2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_PararTrabajo2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo2.FlatAppearance.BorderSize = 0
+        Me.Bnt_PararTrabajo2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.Bnt_PararTrabajo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Bnt_PararTrabajo2.Image = Global.ColasBancarias.UI.My.Resources.Resources.StopDesactivado
+        Me.Bnt_PararTrabajo2.Location = New System.Drawing.Point(214, 67)
+        Me.Bnt_PararTrabajo2.Name = "Bnt_PararTrabajo2"
+        Me.Bnt_PararTrabajo2.Size = New System.Drawing.Size(46, 40)
+        Me.Bnt_PararTrabajo2.TabIndex = 11
+        Me.Bnt_PararTrabajo2.UseVisualStyleBackColor = True
         '
         'Bnt_Transaccion4
         '
-        Me.Bnt_Transaccion4.Image = Global.ColasBancarias.UI.My.Resources.Resources.Upload
+        Me.Bnt_Transaccion4.Image = CType(resources.GetObject("Bnt_Transaccion4.Image"), System.Drawing.Image)
         Me.Bnt_Transaccion4.Location = New System.Drawing.Point(695, 245)
         Me.Bnt_Transaccion4.Name = "Bnt_Transaccion4"
         Me.Bnt_Transaccion4.Size = New System.Drawing.Size(43, 38)
         Me.Bnt_Transaccion4.TabIndex = 40
         Me.Bnt_Transaccion4.UseVisualStyleBackColor = True
         '
+        'Bnt_Transaccion3
+        '
+        Me.Bnt_Transaccion3.Image = CType(resources.GetObject("Bnt_Transaccion3.Image"), System.Drawing.Image)
+        Me.Bnt_Transaccion3.Location = New System.Drawing.Point(499, 245)
+        Me.Bnt_Transaccion3.Name = "Bnt_Transaccion3"
+        Me.Bnt_Transaccion3.Size = New System.Drawing.Size(39, 38)
+        Me.Bnt_Transaccion3.TabIndex = 39
+        Me.Bnt_Transaccion3.UseVisualStyleBackColor = True
+        '
+        'Bnt_Transaccion2
+        '
+        Me.Bnt_Transaccion2.Image = CType(resources.GetObject("Bnt_Transaccion2.Image"), System.Drawing.Image)
+        Me.Bnt_Transaccion2.Location = New System.Drawing.Point(299, 245)
+        Me.Bnt_Transaccion2.Name = "Bnt_Transaccion2"
+        Me.Bnt_Transaccion2.Size = New System.Drawing.Size(40, 38)
+        Me.Bnt_Transaccion2.TabIndex = 38
+        Me.Bnt_Transaccion2.UseVisualStyleBackColor = True
+        '
         'Bnt_Transaccion1
         '
-        Me.Bnt_Transaccion1.Image = Global.ColasBancarias.UI.My.Resources.Resources.Upload
+        Me.Bnt_Transaccion1.Image = CType(resources.GetObject("Bnt_Transaccion1.Image"), System.Drawing.Image)
         Me.Bnt_Transaccion1.Location = New System.Drawing.Point(97, 245)
         Me.Bnt_Transaccion1.Name = "Bnt_Transaccion1"
         Me.Bnt_Transaccion1.Size = New System.Drawing.Size(41, 39)
@@ -211,10 +258,10 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Menu.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Menu.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bnt_Menu.Image = Global.ColasBancarias.UI.My.Resources.Resources.menu
-        Me.Bnt_Menu.Location = New System.Drawing.Point(703, 353)
+        Me.Bnt_Menu.Image = CType(resources.GetObject("Bnt_Menu.Image"), System.Drawing.Image)
+        Me.Bnt_Menu.Location = New System.Drawing.Point(745, 353)
         Me.Bnt_Menu.Name = "Bnt_Menu"
-        Me.Bnt_Menu.Size = New System.Drawing.Size(106, 43)
+        Me.Bnt_Menu.Size = New System.Drawing.Size(41, 43)
         Me.Bnt_Menu.TabIndex = 22
         Me.Bnt_Menu.UseVisualStyleBackColor = False
         '
@@ -226,28 +273,12 @@ Partial Class Frm_FilaClientes
         Me.btn_RefrescarFila.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
         Me.btn_RefrescarFila.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
         Me.btn_RefrescarFila.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_RefrescarFila.Image = Global.ColasBancarias.UI.My.Resources.Resources.Refresh
+        Me.btn_RefrescarFila.Image = CType(resources.GetObject("btn_RefrescarFila.Image"), System.Drawing.Image)
         Me.btn_RefrescarFila.Location = New System.Drawing.Point(12, 353)
         Me.btn_RefrescarFila.Name = "btn_RefrescarFila"
         Me.btn_RefrescarFila.Size = New System.Drawing.Size(46, 43)
         Me.btn_RefrescarFila.TabIndex = 21
         Me.btn_RefrescarFila.UseVisualStyleBackColor = True
-        '
-        'Bnt_PararTrabajo4
-        '
-        Me.Bnt_PararTrabajo4.BackColor = System.Drawing.SystemColors.Control
-        Me.Bnt_PararTrabajo4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Bnt_PararTrabajo4.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
-        Me.Bnt_PararTrabajo4.FlatAppearance.BorderSize = 0
-        Me.Bnt_PararTrabajo4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Bnt_PararTrabajo4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
-        Me.Bnt_PararTrabajo4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bnt_PararTrabajo4.Image = Global.ColasBancarias.UI.My.Resources.Resources._Stop
-        Me.Bnt_PararTrabajo4.Location = New System.Drawing.Point(610, 67)
-        Me.Bnt_PararTrabajo4.Name = "Bnt_PararTrabajo4"
-        Me.Bnt_PararTrabajo4.Size = New System.Drawing.Size(46, 40)
-        Me.Bnt_PararTrabajo4.TabIndex = 19
-        Me.Bnt_PararTrabajo4.UseVisualStyleBackColor = False
         '
         'Bnt_Siguente4
         '
@@ -260,7 +291,7 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Siguente4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Siguente4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Siguente4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bnt_Siguente4.Image = Global.ColasBancarias.UI.My.Resources.Resources.forward
+        Me.Bnt_Siguente4.Image = CType(resources.GetObject("Bnt_Siguente4.Image"), System.Drawing.Image)
         Me.Bnt_Siguente4.Location = New System.Drawing.Point(610, 113)
         Me.Bnt_Siguente4.Name = "Bnt_Siguente4"
         Me.Bnt_Siguente4.Size = New System.Drawing.Size(46, 40)
@@ -275,27 +306,12 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Trabajar4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Trabajar4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Trabajar4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bnt_Trabajar4.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
+        Me.Bnt_Trabajar4.Image = CType(resources.GetObject("Bnt_Trabajar4.Image"), System.Drawing.Image)
         Me.Bnt_Trabajar4.Location = New System.Drawing.Point(610, 21)
         Me.Bnt_Trabajar4.Name = "Bnt_Trabajar4"
         Me.Bnt_Trabajar4.Size = New System.Drawing.Size(46, 40)
         Me.Bnt_Trabajar4.TabIndex = 17
         Me.Bnt_Trabajar4.UseVisualStyleBackColor = True
-        '
-        'Bnt_PararTrabajo3
-        '
-        Me.Bnt_PararTrabajo3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Bnt_PararTrabajo3.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
-        Me.Bnt_PararTrabajo3.FlatAppearance.BorderSize = 0
-        Me.Bnt_PararTrabajo3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
-        Me.Bnt_PararTrabajo3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
-        Me.Bnt_PararTrabajo3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bnt_PararTrabajo3.Image = Global.ColasBancarias.UI.My.Resources.Resources._Stop
-        Me.Bnt_PararTrabajo3.Location = New System.Drawing.Point(408, 67)
-        Me.Bnt_PararTrabajo3.Name = "Bnt_PararTrabajo3"
-        Me.Bnt_PararTrabajo3.Size = New System.Drawing.Size(46, 40)
-        Me.Bnt_PararTrabajo3.TabIndex = 16
-        Me.Bnt_PararTrabajo3.UseVisualStyleBackColor = True
         '
         'Bnt_Siguente3
         '
@@ -305,7 +321,7 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Siguente3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Siguente3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Siguente3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bnt_Siguente3.Image = Global.ColasBancarias.UI.My.Resources.Resources.forward
+        Me.Bnt_Siguente3.Image = CType(resources.GetObject("Bnt_Siguente3.Image"), System.Drawing.Image)
         Me.Bnt_Siguente3.Location = New System.Drawing.Point(408, 113)
         Me.Bnt_Siguente3.Name = "Bnt_Siguente3"
         Me.Bnt_Siguente3.Size = New System.Drawing.Size(46, 40)
@@ -320,7 +336,7 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Trabajar3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Trabajar3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Trabajar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bnt_Trabajar3.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
+        Me.Bnt_Trabajar3.Image = CType(resources.GetObject("Bnt_Trabajar3.Image"), System.Drawing.Image)
         Me.Bnt_Trabajar3.Location = New System.Drawing.Point(408, 21)
         Me.Bnt_Trabajar3.Name = "Bnt_Trabajar3"
         Me.Bnt_Trabajar3.Size = New System.Drawing.Size(46, 40)
@@ -330,7 +346,7 @@ Partial Class Frm_FilaClientes
         'PictureBox3
         '
         Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox3.Image = Global.ColasBancarias.UI.My.Resources.Resources.cajera
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(662, 42)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(92, 100)
@@ -340,27 +356,12 @@ Partial Class Frm_FilaClientes
         'PictureBox4
         '
         Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox4.Image = Global.ColasBancarias.UI.My.Resources.Resources.Cajero
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
         Me.PictureBox4.Location = New System.Drawing.Point(460, 42)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(93, 100)
         Me.PictureBox4.TabIndex = 12
         Me.PictureBox4.TabStop = False
-        '
-        'Bnt_PararTrabajo2
-        '
-        Me.Bnt_PararTrabajo2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Bnt_PararTrabajo2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
-        Me.Bnt_PararTrabajo2.FlatAppearance.BorderSize = 0
-        Me.Bnt_PararTrabajo2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
-        Me.Bnt_PararTrabajo2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
-        Me.Bnt_PararTrabajo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bnt_PararTrabajo2.Image = Global.ColasBancarias.UI.My.Resources.Resources._Stop
-        Me.Bnt_PararTrabajo2.Location = New System.Drawing.Point(214, 67)
-        Me.Bnt_PararTrabajo2.Name = "Bnt_PararTrabajo2"
-        Me.Bnt_PararTrabajo2.Size = New System.Drawing.Size(46, 40)
-        Me.Bnt_PararTrabajo2.TabIndex = 11
-        Me.Bnt_PararTrabajo2.UseVisualStyleBackColor = True
         '
         'Bnt_Siguente2
         '
@@ -370,7 +371,7 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Siguente2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Siguente2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Siguente2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bnt_Siguente2.Image = Global.ColasBancarias.UI.My.Resources.Resources.forward
+        Me.Bnt_Siguente2.Image = CType(resources.GetObject("Bnt_Siguente2.Image"), System.Drawing.Image)
         Me.Bnt_Siguente2.Location = New System.Drawing.Point(214, 113)
         Me.Bnt_Siguente2.Name = "Bnt_Siguente2"
         Me.Bnt_Siguente2.Size = New System.Drawing.Size(46, 40)
@@ -385,7 +386,7 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Trabajar2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Trabajar2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Trabajar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bnt_Trabajar2.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
+        Me.Bnt_Trabajar2.Image = CType(resources.GetObject("Bnt_Trabajar2.Image"), System.Drawing.Image)
         Me.Bnt_Trabajar2.Location = New System.Drawing.Point(214, 21)
         Me.Bnt_Trabajar2.Name = "Bnt_Trabajar2"
         Me.Bnt_Trabajar2.Size = New System.Drawing.Size(46, 40)
@@ -400,7 +401,7 @@ Partial Class Frm_FilaClientes
         Me.Bnt_PararTrabajo1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_PararTrabajo1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_PararTrabajo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bnt_PararTrabajo1.Image = Global.ColasBancarias.UI.My.Resources.Resources._Stop
+        Me.Bnt_PararTrabajo1.Image = Global.ColasBancarias.UI.My.Resources.Resources.StopDesactivado
         Me.Bnt_PararTrabajo1.Location = New System.Drawing.Point(12, 67)
         Me.Bnt_PararTrabajo1.Name = "Bnt_PararTrabajo1"
         Me.Bnt_PararTrabajo1.Size = New System.Drawing.Size(46, 40)
@@ -416,7 +417,7 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Siguente1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Siguente1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Siguente1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Bnt_Siguente1.Image = Global.ColasBancarias.UI.My.Resources.Resources.forward
+        Me.Bnt_Siguente1.Image = CType(resources.GetObject("Bnt_Siguente1.Image"), System.Drawing.Image)
         Me.Bnt_Siguente1.Location = New System.Drawing.Point(12, 113)
         Me.Bnt_Siguente1.Name = "Bnt_Siguente1"
         Me.Bnt_Siguente1.Size = New System.Drawing.Size(46, 40)
@@ -431,7 +432,7 @@ Partial Class Frm_FilaClientes
         Me.Bnt_Trabajar1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Trabajar1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
         Me.Bnt_Trabajar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bnt_Trabajar1.Image = Global.ColasBancarias.UI.My.Resources.Resources.Play
+        Me.Bnt_Trabajar1.Image = CType(resources.GetObject("Bnt_Trabajar1.Image"), System.Drawing.Image)
         Me.Bnt_Trabajar1.Location = New System.Drawing.Point(12, 21)
         Me.Bnt_Trabajar1.Name = "Bnt_Trabajar1"
         Me.Bnt_Trabajar1.Size = New System.Drawing.Size(46, 40)
@@ -441,7 +442,7 @@ Partial Class Frm_FilaClientes
         'PictureBox2
         '
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox2.Image = Global.ColasBancarias.UI.My.Resources.Resources.cajera
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(266, 42)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(92, 100)
@@ -451,7 +452,7 @@ Partial Class Frm_FilaClientes
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.Image = Global.ColasBancarias.UI.My.Resources.Resources.Cajero
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(64, 42)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(93, 100)
@@ -462,7 +463,7 @@ Partial Class Frm_FilaClientes
         '
         Me.PrimerCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PrimerCliente.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PrimerCliente.Image = Global.ColasBancarias.UI.My.Resources.Resources.ciego
+        Me.PrimerCliente.Image = CType(resources.GetObject("PrimerCliente.Image"), System.Drawing.Image)
         Me.PrimerCliente.Location = New System.Drawing.Point(365, 325)
         Me.PrimerCliente.Name = "PrimerCliente"
         Me.PrimerCliente.Size = New System.Drawing.Size(43, 56)

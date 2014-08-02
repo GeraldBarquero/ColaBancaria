@@ -7,7 +7,7 @@
     </ProductVersion>
     <SchemaVersion>
     </SchemaVersion>
-    <ProjectGuid>{AF4E9BB4-7509-4583-AF09-CF0E62B9E284}</ProjectGuid>
+    <ProjectGuid>{712C9FD7-E998-4899-973A-1E82F8CA80C9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>ColasBancarias.BLL</RootNamespace>
     <AssemblyName>ColasBancarias.BLL</AssemblyName>
@@ -66,11 +66,8 @@
   <ItemGroup>
     <Compile Include="BllCajero.vb" />
     <Compile Include="BllCliente.vb" />
-<<<<<<< HEAD
     <Compile Include="BllFilaCliente.vb" />
-=======
     <Compile Include="BllTransaccion.vb" />
->>>>>>> fe3614836d688a6b3227afbf574e5e6c861f4caf
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -108,7 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ColasBancarias.DAO\ColasBancarias.DAO.vbproj">
-      <Project>{3D051964-81A0-4487-9233-E9A35737EA7A}</Project>
+      <Project>{610A675C-44CA-499F-BC32-397FB9DD62C2}</Project>
       <Name>ColasBancarias.DAO</Name>
     </ProjectReference>
     <ProjectReference Include="..\ColasBancarias.Entidades\ColasBancarias.Entidades.vbproj">

@@ -7,7 +7,7 @@
     </ProductVersion>
     <SchemaVersion>
     </SchemaVersion>
-    <ProjectGuid>{3D051964-81A0-4487-9233-E9A35737EA7A}</ProjectGuid>
+    <ProjectGuid>{610A675C-44CA-499F-BC32-397FB9DD62C2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>ColasBancarias.DAO</RootNamespace>
     <AssemblyName>ColasBancarias.DAO</AssemblyName>
@@ -45,16 +45,10 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Oracle.DataAccess, Version=2.112.1.2, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -75,11 +69,8 @@
     <Compile Include="ConeccionOracle.vb" />
     <Compile Include="MetodosCajero.vb" />
     <Compile Include="MetodosCliente.vb" />
-<<<<<<< HEAD
     <Compile Include="MetodosFilaCliente.vb" />
-=======
     <Compile Include="MetodosTransaccion.vb" />
->>>>>>> fe3614836d688a6b3227afbf574e5e6c861f4caf
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -119,10 +110,6 @@
     <ProjectReference Include="..\ColasBancarias.Entidades\ColasBancarias.Entidades.vbproj">
       <Project>{3E175851-A435-4E9F-8E60-805BF4398C15}</Project>
       <Name>ColasBancarias.Entidades</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ColasBancarias.Utilitarios\ColasBancarias.Utilitarios.vbproj">
-      <Project>{C99D8F13-FEF9-4F29-9098-759DD6E3C890}</Project>
-      <Name>ColasBancarias.Utilitarios</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

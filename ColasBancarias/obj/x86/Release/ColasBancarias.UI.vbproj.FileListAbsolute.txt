@@ -54,8 +54,6 @@ C:\Git\ColaBancaria\ColasBancarias\bin\Release\ColasBancarias.DAO.xml
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Release\ColasBancarias.UI.exe
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Release\ColasBancarias.UI.pdb
 <<<<<<< HEAD
-C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\obj\x86\Release\ColasBancarias.UI.Frm_Menu.resources
-C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\obj\x86\Release\ColasBancarias.UI.Frm_ValidarCliente.resources
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\obj\x86\Release\ColasBancarias.UI.Frm_ListaFilaCliente.resources
 =======
 >>>>>>> fe3614836d688a6b3227afbf574e5e6c861f4caf
