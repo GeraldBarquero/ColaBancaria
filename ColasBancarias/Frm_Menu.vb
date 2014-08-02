@@ -20,9 +20,9 @@
         ListaCajeros.ShowDialog()
     End Sub
 
-    Private Sub Bt_FilaCliente_Click(sender As System.Object, e As System.EventArgs)
-        Dim FilaClientes As New Frm_FilaClientes
-        FilaClientes.ShowDialog()
+    Private Sub Bnt_FilaCliente_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_FilaCliente.Click
+        Dim ListaFilaClientes As New Frm_ListaFilaCliente
+        ListaFilaClientes.ShowDialog()
 
     End Sub
 End Class

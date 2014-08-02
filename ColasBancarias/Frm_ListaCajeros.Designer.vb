@@ -33,11 +33,13 @@ Partial Class Frm_ListaCajeros
         Me.Dgv_Cajeros.AllowUserToDeleteRows = False
         Me.Dgv_Cajeros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.Dgv_Cajeros.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.Dgv_Cajeros.BackgroundColor = System.Drawing.Color.White
         Me.Dgv_Cajeros.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Dgv_Cajeros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Dgv_Cajeros.Location = New System.Drawing.Point(12, 26)
+        Me.Dgv_Cajeros.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Dgv_Cajeros.Location = New System.Drawing.Point(0, 0)
         Me.Dgv_Cajeros.Name = "Dgv_Cajeros"
-        Me.Dgv_Cajeros.Size = New System.Drawing.Size(624, 171)
+        Me.Dgv_Cajeros.Size = New System.Drawing.Size(638, 197)
         Me.Dgv_Cajeros.TabIndex = 0
         '
         'Btn_RegistrarCajero
@@ -54,6 +56,7 @@ Partial Class Frm_ListaCajeros
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.AutoScroll = True
         Me.AutoSize = True
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(638, 234)
         Me.Controls.Add(Me.Btn_RegistrarCajero)
         Me.Controls.Add(Me.Dgv_Cajeros)

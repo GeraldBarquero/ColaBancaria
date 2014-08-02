@@ -36,11 +36,11 @@ Partial Class Frm_ListaClientes
         Me.Dgv_ListaClientes.BackgroundColor = System.Drawing.Color.White
         Me.Dgv_ListaClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Dgv_ListaClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Dgv_ListaClientes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Dgv_ListaClientes.Dock = System.Windows.Forms.DockStyle.Top
         Me.Dgv_ListaClientes.Location = New System.Drawing.Point(0, 0)
         Me.Dgv_ListaClientes.Name = "Dgv_ListaClientes"
         Me.Dgv_ListaClientes.ReadOnly = True
-        Me.Dgv_ListaClientes.Size = New System.Drawing.Size(768, 246)
+        Me.Dgv_ListaClientes.Size = New System.Drawing.Size(768, 215)
         Me.Dgv_ListaClientes.TabIndex = 0
         '
         'Bt_RegistrarCliente
@@ -57,6 +57,7 @@ Partial Class Frm_ListaClientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.AutoScroll = True
         Me.AutoSize = True
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(768, 246)
         Me.Controls.Add(Me.Bt_RegistrarCliente)
         Me.Controls.Add(Me.Dgv_ListaClientes)

@@ -4,11 +4,20 @@ Imports ColasBancarias.BLL
 Imports ColasBancarias.Entidades.OBJETOS
 
 Public Class Frm_FilaClientes
-    Dim ejecutar As New BllCajero
-    Dim ejecutar2 As New BllCliente
+    Dim ejecutarCajero As New BllCajero
+    Dim ejecutarFilaCliente As New BllFilaCliente
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.KeyPreview = True
+        Bnt_Trabajar1.Enabled = False
+        Bnt_Trabajar2.Enabled = False
+        Bnt_Trabajar3.Enabled = False
+        Bnt_Trabajar4.Enabled = False
+        Lb_Contador.Text = ejecutarFilaCliente.ClientesEnFila()
+        If Lb_Contador.Text = 0 Then
+            PrimerCliente.Load("../../Resources/sinCliente.png")
+        End If
+
     End Sub
 
 
@@ -16,13 +25,13 @@ Public Class Frm_FilaClientes
         Dim datosFila As New Collection
         Dim imagen As String
         Dim sexoCliente As String
-        datosFila = ejecutar2.SiguienteEnFila()
+        datosFila = ejecutarFilaCliente.SiguienteEnFila()
+        imagen = "../../Resources/sinCliente.png"
 
 
         If Lb_Contador.Text <> "0" Then
-            Lb_Contador.Text = ejecutar2.ClientesEnFila()
+            Lb_Contador.Text = ejecutarFilaCliente.ClientesEnFila()
             sexoCliente = datosFila.Item("Sexo_Cliente")
-            imagen = "../../Resources/sinCliente.png"
             Select Case datosFila.Item("Prioridad")
                 Case 1
                     If sexoCliente = "Hombre" Then
@@ -77,7 +86,7 @@ Public Class Frm_FilaClientes
                     Txt_NombreCliente4.Text = datosFila.Item("Nombre_Cliente")
             End Select
         Else
-            PrimerCliente.Load("../../Resources/sinCliente.png")
+            PrimerCliente.Load(imagen)
 
             MessageBox.Show("No hay clientes en la fila")
         End If
@@ -91,21 +100,35 @@ Public Class Frm_FilaClientes
         Dim idCajero As Integer
         Try
             accion = "SALIDA"
+
             Select Case sender.Name()
 
                 Case "Bnt_PararTrabajo1"
                     datosCajero.id_cajero = 41
-                    ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
+                    ejecutarCajero.AlmuerzoCafeOtros(datosCajero, accion)
+                    Bnt_Siguente1.Enabled = False
+                    Bnt_PararTrabajo1.Enabled = False
+                    Bnt_Trabajar1.Enabled = True
                 Case "Bnt_PararTrabajo2"
                     datosCajero.id_cajero = 21
-                    ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
+                    ejecutarCajero.AlmuerzoCafeOtros(datosCajero, accion)
+                    Bnt_Siguente2.Enabled = False
+                    Bnt_PararTrabajo2.Enabled = False
+                    Bnt_Trabajar2.Enabled = True
                 Case "Bnt_PararTrabajo3"
                     datosCajero.id_cajero = 22
-                    ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
+                    ejecutarCajero.AlmuerzoCafeOtros(datosCajero, accion)
+                    Bnt_Siguente3.Enabled = False
+                    Bnt_PararTrabajo3.Enabled = False
+                    Bnt_Trabajar3.Enabled = True
                 Case "Bnt_PararTrabajo4"
                     datosCajero.id_cajero = 23
-                    ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
+                    ejecutarCajero.AlmuerzoCafeOtros(datosCajero, accion)
+                    Bnt_Siguente4.Enabled = False
+                    Bnt_PararTrabajo4.Enabled = False
+                    Bnt_Trabajar4.Enabled = True
             End Select
+
             idCajero = datosCajero.id_cajero
             MessageBox.Show("El cajero número : " & idCajero & " salio a almorzar.")
         Catch ex As Exception
@@ -124,16 +147,28 @@ Public Class Frm_FilaClientes
             Select Case sender.Name()
                 Case "Bnt_Trabajar1"
                     datosCajero.id_cajero = 41
-                    ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
+                    ejecutarCajero.AlmuerzoCafeOtros(datosCajero, accion)
+                    Bnt_Siguente1.Enabled = True
+                    Bnt_PararTrabajo1.Enabled = True
+                    Bnt_Trabajar1.Enabled = False
                 Case "Bnt_Trabajar2"
                     datosCajero.id_cajero = 21
-                    ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
+                    ejecutarCajero.AlmuerzoCafeOtros(datosCajero, accion)
+                    Bnt_Siguente2.Enabled = True
+                    Bnt_PararTrabajo2.Enabled = True
+                    Bnt_Trabajar2.Enabled = False
                 Case "Bnt_Trabajar3"
                     datosCajero.id_cajero = 22
-                    ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
+                    ejecutarCajero.AlmuerzoCafeOtros(datosCajero, accion)
+                    Bnt_Siguente3.Enabled = True
+                    Bnt_PararTrabajo3.Enabled = True
+                    Bnt_Trabajar3.Enabled = False
                 Case "Bnt_Trabajar4"
                     datosCajero.id_cajero = 23
-                    ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
+                    ejecutarCajero.AlmuerzoCafeOtros(datosCajero, accion)
+                    Bnt_Siguente4.Enabled = True
+                    Bnt_PararTrabajo4.Enabled = True
+                    Bnt_Trabajar4.Enabled = False
             End Select
             idCajero = datosCajero.id_cajero
             MessageBox.Show("El cajero número : " & idCajero & " entro a trabajar.")
@@ -143,7 +178,7 @@ Public Class Frm_FilaClientes
     End Sub
 
     Private Sub btn_RefrescarFila_Click(sender As System.Object, e As System.EventArgs) Handles btn_RefrescarFila.Click
-        Lb_Contador.Text = ejecutar2.ClientesEnFila()
+        Lb_Contador.Text = ejecutarFilaCliente.ClientesEnFila()
     End Sub
 
     Private Sub Bnt_Menu_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Menu.Click
@@ -154,5 +189,9 @@ Public Class Frm_FilaClientes
     Private Sub Bnt_IngresarFila_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_IngresarFila.Click
         Dim ValidarCliente As New Frm_ValidarCliente
         ValidarCliente.ShowDialog()
+    End Sub
+
+    Private Sub Bnt_Transaccion1_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Transaccion1.Click
+
     End Sub
 End Class
