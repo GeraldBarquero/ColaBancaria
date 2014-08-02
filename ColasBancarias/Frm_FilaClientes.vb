@@ -4,22 +4,11 @@ Imports ColasBancarias.BLL
 Imports ColasBancarias.Entidades.OBJETOS
 
 Public Class Frm_FilaClientes
-<<<<<<< HEAD
     Dim ejecutarCajero As New BllCajero
     Dim ejecutarFilaCliente As New BllFilaCliente
     Dim ejecutar As New BllCajero
     Dim ejecutar2 As New BllCliente
     Dim idCajero As Integer
-=======
-
-    Dim ejecutarCajero As New BllCajero
-    Dim ejecutarFilaCliente As New BllFilaCliente
-
-    Dim ejecutar As New BllCajero
-    Dim ejecutar2 As New BllCliente
-    Dim idCajero As Integer
-
->>>>>>> 5da81d9e32f4a5a6c773bbac7e5e2680ebc2b564
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.KeyPreview = True
@@ -119,10 +108,6 @@ Public Class Frm_FilaClientes
 
                 Case "Bnt_PararTrabajo1"
                     datosCajero.id_cajero = 41
-<<<<<<< HEAD
-=======
-
->>>>>>> 5da81d9e32f4a5a6c773bbac7e5e2680ebc2b564
                     ejecutarCajero.AlmuerzoCafeOtros(datosCajero, accion)
                     Bnt_Siguente1.Enabled = False
                     Bnt_PararTrabajo1.Enabled = False
@@ -145,10 +130,6 @@ Public Class Frm_FilaClientes
                     Bnt_Siguente4.Enabled = False
                     Bnt_PararTrabajo4.Enabled = False
                     Bnt_Trabajar4.Enabled = True
-<<<<<<< HEAD
-=======
-
->>>>>>> 5da81d9e32f4a5a6c773bbac7e5e2680ebc2b564
                     ejecutar.AlmuerzoCafeOtros(datosCajero, accion)
 
                 Case "Bnt_PararTrabajo2"
@@ -227,13 +208,6 @@ Public Class Frm_FilaClientes
         ValidarCliente.ShowDialog()
     End Sub
 
-<<<<<<< HEAD
-=======
-    Private Sub Bnt_Transaccion1_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Transaccion1.Click
-
-    End Sub
-
->>>>>>> 5da81d9e32f4a5a6c773bbac7e5e2680ebc2b564
     Private Sub Bnt_Transaccion_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Transaccion1.Click, Bnt_Transaccion2.Click, Bnt_Transaccion3.Click, Bnt_Transaccion4.Click
         Dim TransaccionCliente As New Frm_RegistroTransaccion
 
@@ -256,9 +230,4 @@ Public Class Frm_FilaClientes
         End Select
         TransaccionCliente.ShowDialog()
     End Sub
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 5da81d9e32f4a5a6c773bbac7e5e2680ebc2b564
 End Class
