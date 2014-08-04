@@ -12,9 +12,13 @@ Public Class MetodosTransaccion
             conn.cmd = New OracleCommand("INSERT_TBTRANSACCION", conn.connection)
             conn.cmd.CommandType = CommandType.StoredProcedure
 
-            conn.cmd.Parameters.Add("PCLIENTE")
-            conn.cmd.Parameters.Add("PCAJERO")
-            conn.cmd.Parameters.Add("PTIPO_TRANSACCION")
+            conn.cmd.Parameters.Add("PNOMBRE_CLIENTE", OracleDbType.Varchar2, objtransaccion.nombre_cliente, ParameterDirection.Input)
+            conn.cmd.Parameters.Add("PID_CAJERO", OracleDbType.Int32, objtransaccion.id_cajero, ParameterDirection.Input)
+            conn.cmd.Parameters.Add("PTIPO_TRANSACCION", OracleDbType.Varchar2, objtransaccion.tipo_transaccion, ParameterDirection.Input)
+            conn.cmd.ExecuteReader()
+
+            conn.cmd.Dispose()
+            conn.connection.Close()
 
         Catch ex As Exception
 

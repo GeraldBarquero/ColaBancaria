@@ -76,7 +76,7 @@ Partial Class Frm_RegistroTransaccion
         'Cbx_TipoTransaccion
         '
         Me.Cbx_TipoTransaccion.FormattingEnabled = True
-        Me.Cbx_TipoTransaccion.Items.AddRange(New Object() {"", "Deposito ", "Retiro ", "Pago de Servicio"})
+        Me.Cbx_TipoTransaccion.Items.AddRange(New Object() {"", "Deposito", "Retiro", "Pago de Servicio"})
         Me.Cbx_TipoTransaccion.Location = New System.Drawing.Point(151, 109)
         Me.Cbx_TipoTransaccion.Name = "Cbx_TipoTransaccion"
         Me.Cbx_TipoTransaccion.Size = New System.Drawing.Size(121, 21)

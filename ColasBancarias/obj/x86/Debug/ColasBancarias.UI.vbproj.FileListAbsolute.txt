@@ -1,8 +1,6 @@
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\ColasBancarias\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.vbprojResolveAssemblyReference.cache
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.vbprojResolveAssemblyReference.cache
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_FilaClientes.resources
-C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_Inicio.resources
-C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_NuevoCliente.resources
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.vbproj.GenerateResource.Cache
 C:\Git\ColaBancaria\ColasBancarias\bin\Debug\ColasBancarias.UI.exe
 C:\Git\ColaBancaria\ColasBancarias\bin\Debug\ColasBancarias.UI.pdb
@@ -22,7 +20,6 @@ C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Resources.res
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.exe
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.pdb
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_ConsultarCliente.resources
-C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_ListaCajerosvb.resources
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_ListaClientes.resources
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_RegistroCajero.resources
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\bin\Debug\ColasBancarias.UI.exe
@@ -54,3 +51,9 @@ C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\ob
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.vbproj.GenerateResource.Cache
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.exe
 C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.pdb
+C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_ListaFilaCliente.resources
+C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_Menu.resources
+C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_ListaCajeros.resources
+C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_RegistroTransaccion.resources
+C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_ValidarCliente.resources
+C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_RegistroCliente.resources
