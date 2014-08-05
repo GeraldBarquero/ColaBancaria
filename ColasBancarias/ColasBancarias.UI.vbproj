@@ -103,6 +103,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_Bitacora.Designer.vb">
+      <DependentUpon>Frm_Bitacora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Bitacora.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Frm_ConsultarCliente.Designer.vb">
       <DependentUpon>Frm_ConsultarCliente.vb</DependentUpon>
     </Compile>
@@ -180,6 +186,9 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Frm_Bitacora.resx">
+      <DependentUpon>Frm_Bitacora.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_ConsultarCliente.resx">
       <DependentUpon>Frm_ConsultarCliente.vb</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +262,7 @@
     <Content Include="Resources\AddEmpleados.png" />
     <Content Include="Resources\anciana.png" />
     <Content Include="Resources\anciano.PNG" />
+    <Content Include="Resources\Bitacora.PNG" />
     <Content Include="Resources\cajera.PNG" />
     <Content Include="Resources\Cajero.png" />
     <Content Include="Resources\Cancel.png" />
