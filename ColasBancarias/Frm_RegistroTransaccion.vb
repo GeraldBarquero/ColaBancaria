@@ -20,7 +20,9 @@ Public Class Frm_RegistroTransaccion
             TransaccionCliente.tipo_transaccion = Cbx_TipoTransaccion.Text
             ejecutar.insertarTransaccion(TransaccionCliente)
             MessageBox.Show("Transaccion Realizada Correctamente")
+            ''TransaccionCliente.nombre_cliente = ""
             Me.Close()
+
         Catch ex As Exception
             MessageBox.Show("Error: " + ex.Message, "Error al realizar la transacion", MessageBoxButtons.OK, MessageBoxIcon.[Error])
         End Try

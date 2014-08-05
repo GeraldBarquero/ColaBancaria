@@ -80,6 +80,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OBJETOS\ObjBitacora.vb" />
     <Compile Include="OBJETOS\ObjCajero.vb" />
     <Compile Include="OBJETOS\ObjCliente.vb" />
     <Compile Include="OBJETOS\ObjFilaCliente.vb" />
