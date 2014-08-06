@@ -7,7 +7,6 @@ Public Class Frm_RegistroCajero
 
     Private Sub Btn_CancelarRegistroCajero_Click(sender As System.Object, e As System.EventArgs) Handles Btn_CancelarRegistroCajero.Click
         Me.Close()
-
     End Sub
 
     Private Sub Btn_CrearCajero_Click(sender As System.Object, e As System.EventArgs) Handles Btn_CrearCajero.Click
@@ -17,7 +16,6 @@ Public Class Frm_RegistroCajero
             datosCajero.nombre_cajero = Txt_NombreCajero.Text
             datosCajero.sexo_cajero = Cmb_SexoCajero.Text
             ejecutar.insertarCajero(datosCajero)
-
             MessageBox.Show("Se registro correctamente el cajero")
             Me.Close()
         Catch ex As Exception

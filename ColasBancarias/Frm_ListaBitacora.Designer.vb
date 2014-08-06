@@ -28,20 +28,27 @@ Partial Class Frm_ListaBitacora
         '
         'Dgv_Bitacora
         '
+        Me.Dgv_Bitacora.AllowUserToAddRows = False
+        Me.Dgv_Bitacora.AllowUserToDeleteRows = False
+        Me.Dgv_Bitacora.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.Dgv_Bitacora.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.Dgv_Bitacora.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Dgv_Bitacora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Dgv_Bitacora.Location = New System.Drawing.Point(12, 12)
+        Me.Dgv_Bitacora.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Dgv_Bitacora.Location = New System.Drawing.Point(0, 0)
         Me.Dgv_Bitacora.Name = "Dgv_Bitacora"
-        Me.Dgv_Bitacora.Size = New System.Drawing.Size(983, 200)
+        Me.Dgv_Bitacora.Size = New System.Drawing.Size(758, 200)
         Me.Dgv_Bitacora.TabIndex = 0
         '
-        'Frm_Bitacora
+        'Frm_ListaBitacora
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1016, 262)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
+        Me.AutoScroll = True
+        Me.AutoSize = True
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(758, 200)
         Me.Controls.Add(Me.Dgv_Bitacora)
-        Me.Name = "Frm_Bitacora"
+        Me.Name = "Frm_ListaBitacora"
         Me.Text = "Frm_Bitacora"
         CType(Me.Dgv_Bitacora, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

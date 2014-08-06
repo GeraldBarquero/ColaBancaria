@@ -9,28 +9,48 @@ Public Class Frm_FilaClientes
     Dim ejecutar As New BllCajero
     Dim ejecutar2 As New BllCliente
     Dim idCajero As Integer
-    Dim imagen As String
+    Dim imagen As String = "../../Resources/ciego.png"
 
-    Private Sub Frm_FilaClientes_Activated(sender As Object, e As System.EventArgs) Handles Me.Activated
+    Private Sub RefrescarCampos()
+        If Txt_NombreCliente1.Text = "" Then
+            Bnt_Transaccion1.Enabled = False
+        Else
+            Bnt_Transaccion1.Enabled = True
+        End If
+        If Txt_NombreCliente2.Text = "" Then
+            Bnt_Transaccion2.Enabled = False
+        Else
+            Bnt_Transaccion2.Enabled = True
+        End If
+        If Txt_NombreCliente3.Text = "" Then
+            Bnt_Transaccion3.Enabled = False
+        Else
+            Bnt_Transaccion3.Enabled = True
+        End If
+        If Txt_NombreCliente4.Text = "" Then
+            Bnt_Transaccion4.Enabled = False
+        Else
+            Bnt_Transaccion4.Enabled = True
+        End If
         Lb_Contador.Text = ejecutarFilaCliente.ClientesEnFila()
         PrimerCliente.Load(imagen)
         If Lb_Contador.Text = 0 Then
             PrimerCliente.Load("../../Resources/sinCliente.png")
+            Bnt_Transaccion1.Enabled = False
+            Bnt_Transaccion2.Enabled = False
+            Bnt_Transaccion3.Enabled = False
+            Bnt_Transaccion4.Enabled = False
         End If
     End Sub
 
-
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.KeyPreview = True
+        RefrescarCampos()
         Bnt_Trabajar1.Enabled = False
         Bnt_Trabajar2.Enabled = False
         Bnt_Trabajar3.Enabled = False
         Bnt_Trabajar4.Enabled = False
-        Lb_Contador.Text = ejecutarFilaCliente.ClientesEnFila()
-        PrimerCliente.Load(imagen)
-        If Lb_Contador.Text = 0 Then
-            PrimerCliente.Load("../../Resources/sinCliente.png")
-        End If
+
     End Sub
 
 
@@ -101,8 +121,7 @@ Public Class Frm_FilaClientes
 
             MessageBox.Show("No hay clientes en la fila")
         End If
-
-
+        RefrescarCampos()
     End Sub
 
     Private Sub Bnt_PararTrabajo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Bnt_PararTrabajo1.Click, Bnt_PararTrabajo4.Click, Bnt_PararTrabajo2.Click, Bnt_PararTrabajo3.Click
@@ -149,7 +168,7 @@ Public Class Frm_FilaClientes
         Catch ex As Exception
             MessageBox.Show("Error: " + ex.Message, "Error al salir el Cajero", MessageBoxButtons.OK, MessageBoxIcon.[Error])
         End Try
-
+        RefrescarCampos()
 
     End Sub
 
@@ -193,20 +212,24 @@ Public Class Frm_FilaClientes
         Catch ex As Exception
             MessageBox.Show("Error: " + ex.Message, "Error al entrar el Cajero", MessageBoxButtons.OK, MessageBoxIcon.[Error])
         End Try
+        RefrescarCampos()
     End Sub
 
     Private Sub btn_RefrescarFila_Click(sender As System.Object, e As System.EventArgs) Handles btn_RefrescarFila.Click
         Lb_Contador.Text = ejecutarFilaCliente.ClientesEnFila()
+        RefrescarCampos()
     End Sub
 
     Private Sub Bnt_Menu_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Menu.Click
         Dim MenuPrincipal As New Frm_Menu
         MenuPrincipal.ShowDialog()
+        RefrescarCampos()
     End Sub
 
     Private Sub Bnt_IngresarFila_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_IngresarFila.Click
         Dim ValidarCliente As New Frm_ValidarCliente
         ValidarCliente.ShowDialog()
+        RefrescarCampos()
     End Sub
 
     Private Sub Bnt_Transaccion_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Transaccion1.Click, Bnt_Transaccion2.Click, Bnt_Transaccion3.Click, Bnt_Transaccion4.Click
@@ -241,6 +264,7 @@ Public Class Frm_FilaClientes
                 Txt_NombreCliente4.Text = ""
 
         End Select
+        RefrescarCampos()
 
     End Sub
 End Class
