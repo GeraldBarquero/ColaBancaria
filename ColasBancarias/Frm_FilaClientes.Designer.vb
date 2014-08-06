@@ -157,11 +157,11 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_IngresarFila
         '
-        Me.Bnt_IngresarFila.Location = New System.Drawing.Point(30, 325)
+        Me.Bnt_IngresarFila.Location = New System.Drawing.Point(12, 325)
         Me.Bnt_IngresarFila.Name = "Bnt_IngresarFila"
-        Me.Bnt_IngresarFila.Size = New System.Drawing.Size(75, 23)
+        Me.Bnt_IngresarFila.Size = New System.Drawing.Size(108, 23)
         Me.Bnt_IngresarFila.TabIndex = 36
-        Me.Bnt_IngresarFila.Text = "Button1"
+        Me.Bnt_IngresarFila.Text = "Validar Cliente"
         Me.Bnt_IngresarFila.UseVisualStyleBackColor = True
         '
         'Bnt_PararTrabajo4
@@ -212,6 +212,11 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_Transaccion4
         '
+        Me.Bnt_Transaccion4.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Bnt_Transaccion4.FlatAppearance.BorderSize = 0
+        Me.Bnt_Transaccion4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Bnt_Transaccion4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.Bnt_Transaccion4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Transaccion4.Image = CType(resources.GetObject("Bnt_Transaccion4.Image"), System.Drawing.Image)
         Me.Bnt_Transaccion4.Location = New System.Drawing.Point(695, 245)
         Me.Bnt_Transaccion4.Name = "Bnt_Transaccion4"
@@ -221,6 +226,11 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_Transaccion3
         '
+        Me.Bnt_Transaccion3.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Bnt_Transaccion3.FlatAppearance.BorderSize = 0
+        Me.Bnt_Transaccion3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Bnt_Transaccion3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.Bnt_Transaccion3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Transaccion3.Image = CType(resources.GetObject("Bnt_Transaccion3.Image"), System.Drawing.Image)
         Me.Bnt_Transaccion3.Location = New System.Drawing.Point(499, 245)
         Me.Bnt_Transaccion3.Name = "Bnt_Transaccion3"
@@ -230,6 +240,11 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_Transaccion2
         '
+        Me.Bnt_Transaccion2.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Bnt_Transaccion2.FlatAppearance.BorderSize = 0
+        Me.Bnt_Transaccion2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Bnt_Transaccion2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.Bnt_Transaccion2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Transaccion2.Image = CType(resources.GetObject("Bnt_Transaccion2.Image"), System.Drawing.Image)
         Me.Bnt_Transaccion2.Location = New System.Drawing.Point(299, 245)
         Me.Bnt_Transaccion2.Name = "Bnt_Transaccion2"
@@ -239,6 +254,11 @@ Partial Class Frm_FilaClientes
         '
         'Bnt_Transaccion1
         '
+        Me.Bnt_Transaccion1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Bnt_Transaccion1.FlatAppearance.BorderSize = 0
+        Me.Bnt_Transaccion1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Bnt_Transaccion1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.Bnt_Transaccion1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Transaccion1.Image = CType(resources.GetObject("Bnt_Transaccion1.Image"), System.Drawing.Image)
         Me.Bnt_Transaccion1.Location = New System.Drawing.Point(97, 245)
         Me.Bnt_Transaccion1.Name = "Bnt_Transaccion1"

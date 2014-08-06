@@ -33,6 +33,7 @@ Partial Class Frm_Menu
         Me.Bnt_NuevoCliente = New System.Windows.Forms.Button()
         Me.Bt_Cajero = New System.Windows.Forms.Button()
         Me.Bt_Clientes = New System.Windows.Forms.Button()
+        Me.Lb_BitacoraTransacciones = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Lb_ListaCajeros
@@ -81,7 +82,7 @@ Partial Class Frm_Menu
         Me.Lb_FilaClientes.AutoSize = True
         Me.Lb_FilaClientes.BackColor = System.Drawing.Color.White
         Me.Lb_FilaClientes.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lb_FilaClientes.Location = New System.Drawing.Point(355, 112)
+        Me.Lb_FilaClientes.Location = New System.Drawing.Point(343, 41)
         Me.Lb_FilaClientes.Name = "Lb_FilaClientes"
         Me.Lb_FilaClientes.Size = New System.Drawing.Size(151, 15)
         Me.Lb_FilaClientes.TabIndex = 8
@@ -89,12 +90,18 @@ Partial Class Frm_Menu
         '
         'Bnt_Bitacora
         '
+        Me.Bnt_Bitacora.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Bnt_Bitacora.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Bnt_Bitacora.FlatAppearance.BorderSize = 0
+        Me.Bnt_Bitacora.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Bnt_Bitacora.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.Bnt_Bitacora.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_Bitacora.Image = Global.ColasBancarias.UI.My.Resources.Resources.Bitacora
-        Me.Bnt_Bitacora.Location = New System.Drawing.Point(531, 60)
+        Me.Bnt_Bitacora.Location = New System.Drawing.Point(383, 238)
         Me.Bnt_Bitacora.Name = "Bnt_Bitacora"
-        Me.Bnt_Bitacora.Size = New System.Drawing.Size(200, 260)
+        Me.Bnt_Bitacora.Size = New System.Drawing.Size(87, 100)
         Me.Bnt_Bitacora.TabIndex = 10
-        Me.Bnt_Bitacora.UseVisualStyleBackColor = True
+        Me.Bnt_Bitacora.UseVisualStyleBackColor = False
         '
         'Bnt_FilaCliente
         '
@@ -105,7 +112,7 @@ Partial Class Frm_Menu
         Me.Bnt_FilaCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.Bnt_FilaCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Bnt_FilaCliente.Image = Global.ColasBancarias.UI.My.Resources.Resources.filaClientes
-        Me.Bnt_FilaCliente.Location = New System.Drawing.Point(371, 136)
+        Me.Bnt_FilaCliente.Location = New System.Drawing.Point(365, 60)
         Me.Bnt_FilaCliente.Name = "Bnt_FilaCliente"
         Me.Bnt_FilaCliente.Size = New System.Drawing.Size(118, 108)
         Me.Bnt_FilaCliente.TabIndex = 9
@@ -177,13 +184,25 @@ Partial Class Frm_Menu
         Me.Bt_Clientes.TabIndex = 0
         Me.Bt_Clientes.UseVisualStyleBackColor = True
         '
+        'Lb_BitacoraTransacciones
+        '
+        Me.Lb_BitacoraTransacciones.AutoSize = True
+        Me.Lb_BitacoraTransacciones.BackColor = System.Drawing.Color.White
+        Me.Lb_BitacoraTransacciones.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lb_BitacoraTransacciones.Location = New System.Drawing.Point(343, 220)
+        Me.Lb_BitacoraTransacciones.Name = "Lb_BitacoraTransacciones"
+        Me.Lb_BitacoraTransacciones.Size = New System.Drawing.Size(151, 15)
+        Me.Lb_BitacoraTransacciones.TabIndex = 11
+        Me.Lb_BitacoraTransacciones.Text = "Bitacora de Transacciones"
+        '
         'Frm_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(764, 383)
+        Me.ClientSize = New System.Drawing.Size(530, 383)
+        Me.Controls.Add(Me.Lb_BitacoraTransacciones)
         Me.Controls.Add(Me.Bnt_Bitacora)
         Me.Controls.Add(Me.Bnt_FilaCliente)
         Me.Controls.Add(Me.Lb_FilaClientes)
@@ -212,4 +231,5 @@ Partial Class Frm_Menu
     Friend WithEvents Lb_FilaClientes As System.Windows.Forms.Label
     Friend WithEvents Bnt_FilaCliente As System.Windows.Forms.Button
     Friend WithEvents Bnt_Bitacora As System.Windows.Forms.Button
+    Friend WithEvents Lb_BitacoraTransacciones As System.Windows.Forms.Label
 End Class

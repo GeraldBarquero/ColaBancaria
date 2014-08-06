@@ -58,3 +58,4 @@ C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_RegistroT
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_ValidarCliente.resources
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_RegistroCliente.resources
 C:\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_Bitacora.resources
+C:\Users\gbarquero\Desktop\Datos\Archivos\UIA\Git\ColaBancaria\ColasBancarias\obj\x86\Debug\ColasBancarias.UI.Frm_ListaBitacora.resources

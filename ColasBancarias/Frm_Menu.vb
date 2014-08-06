@@ -27,7 +27,7 @@
     End Sub
 
     Private Sub Bnt_Bitacora_Click(sender As System.Object, e As System.EventArgs) Handles Bnt_Bitacora.Click
-        Dim Bitacota As New Frm_Bitacora
+        Dim Bitacota As New Frm_ListaBitacora
         Bitacota.ShowDialog()
     End Sub
 End Class
